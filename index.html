@@ -95,18 +95,32 @@
       align-items: center;
     }
 
+    .logo-section {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .premium-badge {
+      font-size: 0.65rem;
+      color: var(--accent-gold);
+      letter-spacing: 0.2em;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px rgba(201, 146, 42, 0.4);
+    }
+
     .logo {
       font-family: 'Playfair Display', serif;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       font-weight: 500;
-      color: var(--accent-gold);
+      color: var(--text-primary);
       text-decoration: none;
       transition: all 0.3s ease;
-      text-shadow: 0 0 15px rgba(201, 146, 42, 0.4);
     }
 
     .logo:hover {
-      text-shadow: 0 0 25px rgba(201, 146, 42, 0.8);
+      color: var(--accent-gold);
     }
 
     .nav {
@@ -128,7 +142,7 @@
     /* ===== BOTÃO ===== */
     .btn {
       display: inline-block;
-      padding: 1rem 2rem;
+      padding: 0.95rem 2.2rem;
       background-color: var(--accent-gold);
       color: var(--primary-dark);
       text-decoration: none;
@@ -136,17 +150,18 @@
       border-radius: 50px;
       font-weight: 500;
       cursor: pointer;
-      transition: all 0.3s ease;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       font-family: 'Inter', sans-serif;
-      font-size: 1rem;
-      box-shadow: 0 0 25px rgba(201, 146, 42, 0.4);
-      animation: fadeInUp 1.4s ease;
+      font-size: 0.95rem;
+      box-shadow: 0 5px 25px rgba(201, 146, 42, 0.35);
+      animation: fadeInUp 1.4s ease 0.3s both;
+      letter-spacing: 0.2px;
     }
 
     .btn:hover {
       background-color: var(--accent-gold-hover);
-      transform: translateY(-3px);
-      box-shadow: 0 0 40px rgba(201, 146, 42, 0.6), 0 10px 30px rgba(201, 146, 42, 0.3);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 40px rgba(201, 146, 42, 0.5), 0 0 30px rgba(201, 146, 42, 0.2);
     }
 
     .btn:active {
@@ -205,77 +220,88 @@
 
     /* ===== HERO 3D ===== */
     .hero-3d {
-      background: linear-gradient(180deg, #2A2A2A 0%, #0A0A0A 100%);
+      background: linear-gradient(135deg, #0A0A0A 0%, #1A1410 50%, #0A0A0A 100%);
+      background-size: 200% 200%;
       min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      overflow: visible;
-      padding: 4rem 2rem;
+      overflow: hidden;
+      padding: 5rem 2rem;
       position: relative;
+    }
+
+    .hero-3d::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(201, 146, 42, 0.08) 0%, transparent 70%);
+      border-radius: 50%;
+      filter: blur(60px);
+      pointer-events: none;
     }
 
     .hero-wrapper {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 5rem;
       align-items: center;
       width: 100%;
+      position: relative;
+      z-index: 10;
     }
 
     .hero-left {
       position: relative;
       z-index: 10;
+      max-width: 600px;
     }
 
     .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.75rem;
-      padding: 0.75rem 1.5rem;
-      border: 1px solid rgba(201, 146, 42, 0.4);
-      background: rgba(201, 146, 42, 0.08);
+      display: inline-block;
+      padding: 0.5rem 1.2rem;
+      border: 1px solid rgba(201, 146, 42, 0.5);
+      background: rgba(201, 146, 42, 0.05);
       color: var(--accent-gold);
-      border-radius: 50px;
-      font-size: 0.75rem;
+      border-radius: 4px;
+      font-size: 0.7rem;
       text-transform: uppercase;
-      letter-spacing: 0.15em;
-      margin-bottom: 2rem;
-      font-weight: 500;
+      letter-spacing: 0.2em;
+      margin-bottom: 2.5rem;
+      font-weight: 600;
       backdrop-filter: blur(10px);
       transition: all 0.3s ease;
       animation: fadeInUp 0.8s ease;
     }
 
-    .hero-badge::before {
-      content: '✦';
-      font-size: 1rem;
-    }
-
     .hero-badge:hover {
       border-color: rgba(201, 146, 42, 0.8);
-      background: rgba(201, 146, 42, 0.15);
-      box-shadow: 0 0 20px rgba(201, 146, 42, 0.3);
+      background: rgba(201, 146, 42, 0.12);
+      box-shadow: 0 0 20px rgba(201, 146, 42, 0.25);
     }
 
     .hero-left h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 4.5rem;
-      font-weight: 600;
+      font-size: 4.8rem;
+      font-weight: 500;
       margin-bottom: 1.5rem;
-      line-height: 1.1;
-      animation: fadeInUp 1s ease;
-      letter-spacing: -0.02em;
+      line-height: 1.05;
+      animation: fadeInUp 1s ease 0.1s both;
+      letter-spacing: -0.025em;
     }
 
     .hero-3d-subtitle {
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       font-weight: 300;
       color: var(--text-secondary);
-      margin-bottom: 2.5rem;
-      max-width: 500px;
-      animation: fadeInUp 1.2s ease;
+      margin-bottom: 3rem;
+      max-width: 520px;
+      animation: fadeInUp 1.2s ease 0.2s both;
       line-height: 1.8;
+      letter-spacing: 0.3px;
     }
 
     .hero-right {
@@ -289,57 +315,65 @@
     .devices-showcase {
       position: relative;
       width: 100%;
-      height: 600px;
+      height: 650px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .device {
       position: absolute;
-      background: linear-gradient(135deg, #2A2A2A, #1A1A1A);
+      background: linear-gradient(135deg, #1A1A1A 0%, #0F0F0F 100%);
       border-radius: 12px;
-      box-shadow: 0 30px 80px rgba(0,0,0,0.6);
       overflow: hidden;
+      box-shadow: 0 30px 100px rgba(0,0,0,0.7);
+      transition: all 0.5s ease;
+    }
+
+    .device:hover {
+      box-shadow: 0 40px 120px rgba(201, 146, 42, 0.3), 0 0 50px rgba(201, 146, 42, 0.15);
     }
 
     .device.desktop {
-      width: 500px;
-      height: 312px;
-      border: 10px solid #1A1A1A;
+      width: 550px;
+      height: 340px;
+      border: 12px solid #0A0A0A;
       left: 50%;
       top: 50%;
-      transform: translate(-50%, -50%) perspective(1200px) rotateY(-8deg) rotateX(5deg);
+      transform: translate(-50%, -50%) perspective(1500px) rotateY(-10deg) rotateX(5deg) rotateZ(0deg);
       z-index: 3;
     }
 
     .device.laptop {
-      width: 380px;
-      height: 240px;
-      border: 8px solid #0A0A0A;
-      left: 5%;
-      top: 80px;
-      transform: perspective(1000px) rotateY(15deg) rotateX(3deg);
+      width: 420px;
+      height: 265px;
+      border: 10px solid #0A0A0A;
+      left: -5%;
+      top: 100px;
+      transform: perspective(1200px) rotateY(18deg) rotateX(3deg) rotateZ(2deg);
       z-index: 2;
     }
 
     .device.tablet {
-      width: 280px;
-      height: 380px;
-      border: 10px solid #0A0A0A;
-      border-radius: 20px;
-      right: 8%;
-      top: 150px;
-      transform: perspective(800px) rotateY(-12deg) rotateX(2deg);
+      width: 300px;
+      height: 410px;
+      border: 12px solid #0A0A0A;
+      border-radius: 25px;
+      right: -8%;
+      top: 120px;
+      transform: perspective(1000px) rotateY(-15deg) rotateX(2deg) rotateZ(-3deg);
       z-index: 2;
       display: none;
     }
 
     .device.smartphone {
-      width: 140px;
-      height: 280px;
-      border: 8px solid #0A0A0A;
-      border-radius: 25px;
-      right: 5%;
-      bottom: 50px;
-      transform: perspective(600px) rotateY(10deg) rotateX(3deg);
+      width: 155px;
+      height: 310px;
+      border: 10px solid #0A0A0A;
+      border-radius: 30px;
+      right: 2%;
+      bottom: 40px;
+      transform: perspective(800px) rotateY(12deg) rotateX(2deg) rotateZ(1deg);
       z-index: 1;
     }
 
@@ -846,12 +880,15 @@
   <header>
     <div class="container">
       <div class="header-content">
-        <a href="#" class="logo">Dra Paula Márcula & Dr Breno Amorim</a>
+        <div class="logo-section">
+          <span class="premium-badge">PREMIUM</span>
+          <a href="#" class="logo">Advocacia Trabalhista</a>
+        </div>
         <nav class="nav">
           <a href="#servicos">Serviços</a>
           <a href="#sobre">Sobre</a>
           <a href="#avaliacoes">Avaliações</a>
-          <a href="https://wa.me/5587981785458" class="btn" target="_blank">Falar com especialista</a>
+          <a href="https://wa.me/5587981785458" class="btn" target="_blank">Consultar Agora</a>
         </nav>
       </div>
     </div>
