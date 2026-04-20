@@ -298,69 +298,57 @@
 
     /* ===== DEVICES SHOWCASE ===== */
     .devices-showcase {
-      position: relative;
       width: 100%;
-      height: 650px;
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: center;
+      gap: 2rem;
+      position: relative;
     }
 
     .device {
-      position: absolute;
       background: linear-gradient(135deg, #1A1A1A 0%, #0F0F0F 100%);
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 30px 100px rgba(0,0,0,0.7);
-      transition: all 0.5s ease;
+      transition: all 0.4s ease;
+      flex-shrink: 0;
     }
 
     .device:hover {
       box-shadow: 0 40px 120px rgba(201, 146, 42, 0.3), 0 0 50px rgba(201, 146, 42, 0.15);
+      transform: translateY(-8px);
     }
 
     .device.desktop {
-      width: 550px;
-      height: 340px;
+      width: 480px;
+      height: 300px;
       border: 12px solid #0A0A0A;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%) perspective(1500px) rotateY(-10deg) rotateX(5deg) rotateZ(0deg);
-      z-index: 3;
+      transform: perspective(1200px) rotateY(-5deg) rotateX(3deg);
     }
 
     .device.laptop {
-      width: 420px;
-      height: 265px;
+      width: 360px;
+      height: 225px;
       border: 10px solid #0A0A0A;
-      left: -5%;
-      top: 100px;
-      transform: perspective(1200px) rotateY(18deg) rotateX(3deg) rotateZ(2deg);
-      z-index: 2;
-      display: block;
+      transform: perspective(1000px) rotateY(8deg) rotateX(2deg);
     }
 
     .device.tablet {
-      width: 300px;
-      height: 410px;
+      width: 280px;
+      height: 380px;
       border: 12px solid #0A0A0A;
-      border-radius: 25px;
-      right: -8%;
-      top: 120px;
-      transform: perspective(1000px) rotateY(-15deg) rotateX(2deg) rotateZ(-3deg);
-      z-index: 2;
-      display: none;
+      border-radius: 20px;
+      transform: perspective(900px) rotateY(-8deg) rotateX(2deg);
+      display: block;
     }
 
     .device.smartphone {
-      width: 155px;
-      height: 310px;
-      border: 10px solid #0A0A0A;
-      border-radius: 30px;
-      right: 2%;
-      bottom: 40px;
-      transform: perspective(800px) rotateY(12deg) rotateX(2deg) rotateZ(1deg);
-      z-index: 1;
+      width: 140px;
+      height: 280px;
+      border: 9px solid #0A0A0A;
+      border-radius: 28px;
+      transform: perspective(700px) rotateY(5deg) rotateX(1deg);
     }
 
     .device-content {
@@ -821,31 +809,31 @@
 
     /* ===== RESPONSIVIDADE ===== */
     @media (max-width: 1440px) {
-      .hero-wrapper {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-      }
-
       .device.desktop {
-        width: 400px;
-        height: 250px;
+        width: 420px;
+        height: 260px;
       }
 
       .device.laptop {
-        width: 300px;
-        height: 190px;
+        width: 320px;
+        height: 200px;
+      }
+
+      .device.tablet {
+        width: 250px;
+        height: 340px;
       }
 
       .device.smartphone {
-        width: 120px;
-        height: 240px;
+        width: 125px;
+        height: 250px;
       }
     }
 
     @media (max-width: 1024px) {
       .hero-wrapper {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 3rem;
       }
 
       .hero-left h1 {
@@ -853,17 +841,22 @@
       }
 
       .devices-showcase {
-        height: 400px;
+        gap: 1.5rem;
       }
 
       .device.desktop {
-        width: 350px;
-        height: 220px;
+        width: 380px;
+        height: 235px;
       }
 
       .device.laptop {
-        width: 280px;
-        height: 178px;
+        width: 290px;
+        height: 180px;
+      }
+
+      .device.tablet {
+        width: 220px;
+        height: 300px;
       }
 
       .device.smartphone {
@@ -903,23 +896,29 @@
       }
 
       .devices-showcase {
-        height: 300px;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
       }
 
       .device.desktop {
-        width: 280px;
-        height: 175px;
+        width: 320px;
+        height: 200px;
       }
 
       .device.laptop {
-        left: -50px;
-        width: 220px;
-        height: 140px;
+        width: 250px;
+        height: 156px;
+      }
+
+      .device.tablet {
+        width: 180px;
+        height: 245px;
       }
 
       .device.smartphone {
-        width: 90px;
-        height: 180px;
+        width: 95px;
+        height: 190px;
       }
 
       .services-grid {
@@ -946,7 +945,7 @@
       }
 
       .hero-left h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
       }
 
       .hero-3d-subtitle {
@@ -954,36 +953,28 @@
       }
 
       .devices-showcase {
-        height: 350px;
-        margin-top: 2rem;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+        justify-content: center;
       }
 
       .device.desktop {
-        width: 280px;
-        height: 175px;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) perspective(1000px) rotateY(-5deg) rotateX(3deg);
+        width: 260px;
+        height: 160px;
       }
 
       .device.laptop {
-        display: block;
-        left: auto;
-        right: 2%;
-        top: 5px;
         width: 200px;
         height: 125px;
-        border: 6px solid #0A0A0A;
-        transform: perspective(800px) rotateY(12deg) rotateX(2deg);
+      }
+
+      .device.tablet {
+        display: none;
       }
 
       .device.smartphone {
-        width: 100px;
-        height: 200px;
-        right: auto;
-        left: 5%;
-        bottom: 10px;
-        border: 6px solid #0A0A0A;
+        width: 85px;
+        height: 170px;
       }
     }
   </style>
