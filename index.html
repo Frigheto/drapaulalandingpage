@@ -95,21 +95,6 @@
       align-items: center;
     }
 
-    .logo-section {
-      display: flex;
-      flex-direction: column;
-      gap: 0.3rem;
-    }
-
-    .premium-badge {
-      font-size: 0.65rem;
-      color: var(--accent-gold);
-      letter-spacing: 0.2em;
-      font-weight: 600;
-      text-transform: uppercase;
-      text-shadow: 0 0 10px rgba(201, 146, 42, 0.4);
-    }
-
     .logo {
       font-family: 'Playfair Display', serif;
       font-size: 1.4rem;
@@ -352,6 +337,7 @@
       top: 100px;
       transform: perspective(1200px) rotateY(18deg) rotateX(3deg) rotateZ(2deg);
       z-index: 2;
+      display: block;
     }
 
     .device.tablet {
@@ -382,12 +368,68 @@
       height: 100%;
       background: var(--primary-dark);
       display: flex;
+      flex-direction: column;
+      padding: 0;
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+    }
+
+    .device-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.6rem 0.8rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .device-logo {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--accent-gold);
+    }
+
+    .device-nav {
+      display: flex;
+      gap: 0.3rem;
+    }
+
+    .device-nav span {
+      width: 20px;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 1px;
+    }
+
+    .device-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 1rem;
-      color: var(--text-secondary);
+      padding: 0.8rem;
       text-align: center;
-      font-size: 0.8rem;
+    }
+
+    .device-title {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      margin-bottom: 0.3rem;
+    }
+
+    .device-subtitle {
+      font-size: 0.7rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.5rem;
+    }
+
+    .device-btn {
+      width: 50px;
+      height: 18px;
+      background: var(--accent-gold);
+      border-radius: 3px;
+      margin-top: 0.3rem;
     }
 
     /* ===== SERVIÇOS ===== */
@@ -898,8 +940,13 @@
     }
 
     @media (max-width: 480px) {
+      .hero-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
       .hero-left h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
       }
 
       .hero-3d-subtitle {
@@ -907,25 +954,36 @@
       }
 
       .devices-showcase {
-        height: 250px;
+        height: 350px;
+        margin-top: 2rem;
       }
 
       .device.desktop {
-        display: none;
+        width: 280px;
+        height: 175px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) perspective(1000px) rotateY(-5deg) rotateX(3deg);
       }
 
       .device.laptop {
-        left: 50%;
-        transform: translate(-50%, 0) perspective(1000px) rotateY(15deg);
-        width: 180px;
-        height: 114px;
+        display: block;
+        left: auto;
+        right: 2%;
+        top: 5px;
+        width: 200px;
+        height: 125px;
+        border: 6px solid #0A0A0A;
+        transform: perspective(800px) rotateY(12deg) rotateX(2deg);
       }
 
       .device.smartphone {
-        width: 75px;
-        height: 150px;
-        right: 50%;
-        transform: translate(50%, 0) perspective(600px) rotateY(10deg);
+        width: 100px;
+        height: 200px;
+        right: auto;
+        left: 5%;
+        bottom: 10px;
+        border: 6px solid #0A0A0A;
       }
     }
   </style>
@@ -935,10 +993,7 @@
   <header>
     <div class="container">
       <div class="header-content">
-        <div class="logo-section">
-          <span class="premium-badge">PREMIUM</span>
-          <a href="#" class="logo">Advocacia Trabalhista</a>
-        </div>
+        <a href="#" class="logo">Advocacia Trabalhista</a>
         <nav class="nav">
           <a href="#servicos">Serviços</a>
           <a href="#sobre">Sobre</a>
@@ -964,14 +1019,53 @@
         <!-- Coluna Direita: Devices -->
         <div class="hero-right">
           <div class="devices-showcase">
+            <!-- Desktop -->
             <div class="device desktop">
-              <div class="device-content">Desktop View</div>
+              <div class="device-content">
+                <div class="device-header">
+                  <div class="device-logo">Advocacia</div>
+                  <div class="device-nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="device-body">
+                  <div class="device-title">Seus Direitos Defendidos</div>
+                  <div class="device-subtitle">Atendimento especializado online</div>
+                  <div class="device-btn"></div>
+                </div>
+              </div>
             </div>
+
+            <!-- Laptop -->
             <div class="device laptop">
-              <div class="device-content">Laptop View</div>
+              <div class="device-content">
+                <div class="device-header">
+                  <div class="device-logo" style="font-size: 0.5rem;">Advocacia</div>
+                  <div class="device-nav">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="device-body">
+                  <div class="device-title" style="font-size: 1rem;">Direito Trabalhista</div>
+                  <div class="device-subtitle" style="font-size: 0.65rem;">Especializado online</div>
+                </div>
+              </div>
             </div>
+
+            <!-- Smartphone -->
             <div class="device smartphone">
-              <div class="device-content">Mobile</div>
+              <div class="device-content">
+                <div class="device-header" style="padding: 0.4rem;">
+                  <div class="device-logo" style="font-size: 0.4rem;">A</div>
+                </div>
+                <div class="device-body" style="padding: 0.6rem;">
+                  <div class="device-title" style="font-size: 0.7rem;">Seus Direitos</div>
+                  <div style="width: 25px; height: 20px; background: rgba(201, 146, 42, 0.3); border-radius: 3px; margin-top: 0.4rem;"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
