@@ -1,1 +1,985 @@
-<!DOCTYPE html> <html lang="pt-BR"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="description" content="Advogado trabalhista online - Dra. Paula Márcula e Dr. Breno Amorim. Atendimento 100% online em todo o Brasil. Rescisão indireta, horas extras, verbas rescisórias."> <meta name="keywords" content="advogado trabalhista, direito do trabalho, rescisão, horas extras, demissão online"> <meta name="author" content="Dra. Paula Márcula & Dr. Breno S. Amorim"> <meta property="og:title" content="Advogado Trabalhista Online | Dra. Paula Márcula & Dr. Breno Amorim"> <meta property="og:description" content="Teve um problema com seu empregador? Fale agora com um advogado trabalhista especializado. Atendimento online 100%."> <meta property="og:type" content="website"> <title>Advogado Trabalhista Online | Dra. Paula & Dr. Breno - Atendimento 24h</title> <!-- Google Fonts --> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"> <style> /* ===== RESET & VARIÁVEIS ===== */ * { margin: 0; padding: 0; box-sizing: border-box; } :root { --primary-dark: #0A0A0A; --secondary-dark: #111111; --tertiary-dark: #1A1A1A; --accent-gold: #C9922A; --accent-gold-hover: #D4A843; --text-primary: #FFFFFF; --text-secondary: #A0A0A0; --border-light: rgba(255, 255, 255, 0.06); --border-gold: rgba(201, 146, 42, 0.2); --gradient-primary: linear-gradient(135deg, #C9922A 0%, #D4A843 50%, #E8C468 100%); --gradient-dark: linear-gradient(180deg, #0A0A0A 0%, #1A1A1A 100%); --gradient-glow: radial-gradient(circle at 50% 50%, rgba(201, 146, 42, 0.15), transparent 70%); --glass-bg: rgba(26, 26, 26, 0.7); --glass-border: rgba(255, 255, 255, 0.1); } html { scroll-behavior: smooth; } body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: var(--text-primary); background-color: var(--primary-dark); line-height: 1.7; font-size: 1rem; -webkit-font-smoothing: antialiased; position: relative; } body::before { content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100"%3E%3Cfilter id="noise"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" /%3E%3C/filter%3E%3Crect width="100" height="100" filter="url(%23noise)" /%3E%3C/svg%3E'); opacity: 0.03; pointer-events: none; z-index: 1; mix-blend-mode: overlay; } /* ===== TIPOGRAFIA ===== */ h1, h2, h3, h4, h5, h6 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; line-height: 1.2; letter-spacing: 0.02em; } h1 { font-size: 4rem; font-weight: 700; } h2 { font-size: 3rem; margin-bottom: 2rem; } h3 { font-size: 1.5rem; } p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem; } .gold { color: var(--accent-gold); } /* ===== CONTAINER ===== */ .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; } /* ===== BADGE/PÍLULA ===== */ .badge { display: inline-block; padding: 0.5rem 1rem; border: 1px solid rgba(201, 146, 42, 0.4); background: rgba(201, 146, 42, 0.08); color: var(--accent-gold); border-radius: 999px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1.5rem; font-weight: 600; } /* ===== BOTÕES ===== */ .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 1rem 2rem; background-color: var(--accent-gold); color: var(--primary-dark); text-decoration: none; border: none; border-radius: 6px; font-weight: 600; font-size: 1rem; cursor: pointer; transition: all 0.2s ease; font-family: 'DM Sans', sans-serif; } .btn:hover { background-color: var(--accent-gold-hover); transform: translateY(-2px); } .btn-outline { background-color: transparent; color: var(--accent-gold); border: 1px solid var(--accent-gold); } .btn-outline:hover { background-color: rgba(201, 146, 42, 0.1); } .btn-block { display: block; width: 100%; margin-top: 2rem; } .btn-arrow::after { content: " ↗"; } /* ===== GLASSMORPHISM ===== */ .glass-card { background: var(--glass-bg); backdrop-filter: blur(20px) saturate(180%); border: 1px solid var(--glass-border); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); transition: all 0.3s ease; } .glass-card:hover { box-shadow: 0 8px 32px rgba(201, 146, 42, 0.3), 0 0 60px rgba(201, 146, 42, 0.1); border-color: rgba(201, 146, 42, 0.3); } /* ===== GRADIENTES ANIMADOS ===== */ @keyframes gradient-shift { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } } @keyframes gradient-rotate { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } } @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } } .gradient-text { background: linear-gradient(135deg, #C9922A 0%, #D4A843 50%, #E8C468 100%); background-size: 200% 200%; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: gradient-rotate 8s ease infinite; } /* ===== SEÇÃO PADRÃO ===== */ section { padding: 6rem 0; position: relative; overflow: hidden; } section.bg-secondary { background-color: var(--secondary-dark); } section.bg-gradient { background: linear-gradient(135deg, #1A0F00 0%, #2A1800 50%, #1A0F00 100%); background-size: 200% 200%; animation: gradient-shift 12s ease infinite; } .section-header { text-align: center; margin-bottom: 3rem; } .section-header p { color: var(--text-secondary); margin-bottom: 0.5rem; } /* ===== FADE-IN ANIMATION ===== */ .fade-in { opacity: 0; transform: translateY(2rem); transition: all 0.6s ease; } .fade-in.visible { opacity: 1; transform: translateY(0); } .fade-in-stagger { animation-delay: 0.1s; } .fade-in-stagger:nth-child(2) { animation-delay: 0.2s; } .fade-in-stagger:nth-child(3) { animation-delay: 0.3s; } .fade-in-stagger:nth-child(4) { animation-delay: 0.4s; } /* ===== HEADER ===== */ header { position: sticky; top: 0; z-index: 1000; background-color: var(--primary-dark); border-bottom: 1px solid var(--border-light); padding: 1.5rem 0; transition: all 0.3s ease; } header.scrolled { background: var(--glass-bg); backdrop-filter: blur(20px) saturate(180%); border-bottom-color: rgba(201, 146, 42, 0.3); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); } .header-content { display: flex; justify-content: space-between; align-items: center; } .logo { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--accent-gold); text-decoration: none; } .nav { display: flex; gap: 2rem; align-items: center; } .nav a { color: var(--text-primary); text-decoration: none; font-size: 0.9rem; transition: color 0.2s ease; } .nav a:hover { color: var(--accent-gold); } .nav .btn { margin: 0; } @media (max-width: 768px) { .nav { display: none; } } /* ===== HERO 3D ===== */ .hero-3d { background: linear-gradient(180deg, #2A2A2A 0%, #0A0A0A 100%); position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 4rem 2rem; } .hero-3d::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100"%3E%3Cfilter id="noise"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" /%3E%3C/filter%3E%3Crect width="100" height="100" filter="url(%23noise)" /%3E%3C/svg%3E'); opacity: 0.05; pointer-events: none; z-index: 1; } .hero-3d::after { content: ''; position: absolute; top: 30%; right: 20%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(201, 146, 42, 0.1), transparent); filter: blur(80px); pointer-events: none; z-index: 0; } .hero-3d-content { position: relative; z-index: 10; text-align: center; margin-bottom: 2rem; } .badge-premium { display: inline-block; padding: 0.5rem 2rem; border-top: 2px solid var(--accent-gold); border-bottom: 2px solid var(--accent-gold); color: var(--accent-gold); font-size: 0.75rem; letter-spacing: 0.3em; text-transform: uppercase; font-weight: 600; margin-bottom: 2rem; } .hero-3d-content h1 { font-size: 5rem; font-weight: 700; line-height: 1.1; margin-bottom: 1.5rem; text-align: center; } .hero-3d-content h1 .gold { color: var(--accent-gold); } .hero-3d-subtitle { font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; } /* ===== DEVICES SHOWCASE ===== */ .devices-showcase { position: relative; width: 100%; max-width: 1200px; height: 700px; z-index: 5; } .device { position: absolute; background: linear-gradient(135deg, #2A2A2A, #1A1A1A); border-radius: 12px; box-shadow: 0 30px 80px rgba(0,0,0,0.6); overflow: hidden; display: flex; align-items: center; justify-content: center; } /* Desktop Monitor */ .device.desktop { width: 800px; height: 500px; border: 12px solid #1A1A1A; transform: perspective(1200px) rotateY(-5deg) rotateX(2deg); left: 50%; top: 50%; transform: translate(-50%, -50%) perspective(1200px) rotateY(-5deg) rotateX(2deg); z-index: 3; } .device.desktop::after { content: ''; position: absolute; bottom: -60px; left: 50%; transform: translateX(-50%); width: 200px; height: 60px; background: linear-gradient(180deg, #2A2A2A, #1A1A1A); border-radius: 0 0 8px 8px; z-index: -1; } /* Laptop --> .device.laptop { width: 500px; height: 320px; border: 8px solid #0A0A0A; transform: perspective(1000px) rotateY(15deg) rotateX(5deg) translateZ(0); left: -200px; top: 50px; z-index: 2; } .device.laptop::after { content: ''; position: absolute; bottom: -20px; left: -10%; width: 120%; height: 15px; background: linear-gradient(180deg, #1A1A1A, #0A0A0A); border-radius: 0 0 8px 8px; transform: perspective(500px) rotateX(60deg); } /* Tablet */ .device.tablet { width: 300px; height: 420px; border: 10px solid #0A0A0A; border-radius: 20px; transform: perspective(800px) rotateY(-12deg) rotateX(3deg); right: -150px; top: 100px; z-index: 2; } .device.tablet::after { content: ''; position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%); width: 40px; height: 40px; border: 2px solid rgba(255,255,255,0.1); border-radius: 50%; } /* Smartphone */ .device.smartphone { width: 180px; height: 360px; border: 8px solid #0A0A0A; border-radius: 30px; transform: perspective(600px) rotateY(10deg) rotateX(3deg); left: 100px; bottom: 50px; z-index: 1; } .device.smartphone::before { content: ''; position: absolute; top: 10px; left: 50%; transform: translateX(-50%); width: 60px; height: 20px; background: #0A0A0A; border-radius: 0 0 12px 12px; z-index: 10; } /* Device Content */ .device-content { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: var(--primary-dark); overflow: hidden; padding: 1rem; width: 100%; height: 100%; } .mini-header { display: flex; justify-content: space-between; align-items: center; padding: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); margin-bottom: 0.5rem; } .mini-logo { font-size: 0.7rem; color: var(--accent-gold); font-weight: 700; } .mini-nav { display: flex; gap: 0.3rem; } .mini-nav span { width: 30px; height: 3px; background: rgba(255,255,255,0.2); border-radius: 2px; } .mini-hero { text-align: center; padding: 2rem 1rem; } .mini-hero h3 { font-size: 1.2rem; color: #fff; margin: 0 0 1rem 0; } .mini-btn { width: 80px; height: 25px; background: var(--accent-gold); border-radius: 4px; margin: 0 auto; } .mini-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; padding: 1rem; } .mini-card { background: rgba(26, 26, 26, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; height: 60px; } /* ===== HERO ANTIGO (BACKUP) ===== */ .hero { background-color: var(--primary-dark); padding: 5rem 0; position: relative; overflow: hidden; display: none; } .hero::before { content: ""; position: absolute; font-size: 25vw; font-weight: 700; color: var(--text-primary); opacity: 0.03; right: -8vw; top: 50%; transform: translateY(-50%); z-index: 0; pointer-events: none; line-height: 1; } .hero-content { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; position: relative; z-index: 1; } .hero-text h1 { margin-bottom: 1.5rem; line-height: 1.2; font-size: 3.5rem; } .hero-text h1 .gold { color: var(--accent-gold); } .hero-text > p { font-size: 1.1rem; margin-bottom: 2rem; } .hero-seals { display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 2rem 0; font-size: 0.85rem; } .hero-seals span { color: var(--text-secondary); } .hero-images { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; } .foto-placeholder { background: var(--glass-bg); backdrop-filter: blur(20px) saturate(180%); border: 1px solid var(--glass-border); border-radius: 16px; overflow: hidden; aspect-ratio: 3/4; display: flex; align-items: center; justify-content: center; box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6); text-align: center; flex-direction: column; gap: 1rem; transition: all 0.3s ease; position: relative; } .foto-placeholder:hover { box-shadow: 0 24px 60px rgba(201, 146, 42, 0.4), 0 0 80px rgba(201, 146, 42, 0.15); border-color: rgba(201, 146, 42, 0.3); transform: translateY(-8px); } .foto-placeholder img { width: 100%; height: 100%; object-fit: cover; border-radius: 16px; } .foto-placeholder span { font-size: 3rem; transition: transform 0.3s ease; } .foto-placeholder:hover span { transform: scale(1.1); } .foto-placeholder p { margin: 0; color: var(--text-secondary); font-weight: 600; font-size: 1rem; } /* ===== HERO 3D RESPONSIVO ===== */ @media (max-width: 1440px) { .device.desktop { width: 600px; height: 375px; } .device.laptop { width: 400px; height: 256px; left: -150px; } .device.tablet { width: 250px; height: 350px; right: -100px; } .device.smartphone { width: 150px; height: 300px; left: 80px; } .hero-3d-content h1 { font-size: 4rem; } } @media (max-width: 1024px) { .device.tablet { display: none; } .hero-3d-content { margin-bottom: 4rem; } .hero-3d-content h1 { font-size: 3rem; } .devices-showcase { height: 500px; } .device.desktop { width: 500px; height: 312px; } .device.laptop { width: 350px; height: 224px; left: -120px; top: 50%; transform: translateY(-50%) perspective(1000px) rotateY(15deg) rotateX(5deg); } .device.smartphone { width: 140px; height: 280px; bottom: 50%; transform: translateY(50%) perspective(600px) rotateY(10deg) rotateX(3deg); } } @media (max-width: 768px) { .device.desktop, .device.laptop { display: none; } .device.smartphone { position: relative; left: auto !important; right: auto !important; bottom: auto !important; top: auto !important; transform: translateY(0) perspective(600px) rotateY(10deg) rotateX(3deg) !important; margin: 2rem auto 0; } .devices-showcase { position: relative; width: 100%; max-width: 100%; height: auto; display: flex; justify-content: center; padding-top: 2rem; } .hero-3d-content h1 { font-size: 2rem; } .badge-premium { font-size: 0.7rem; } .hero-3d-subtitle { font-size: 1rem; } } @media (max-width: 480px) { .hero-3d { padding: 2rem 1rem; } .hero-3d-content h1 { font-size: 1.5rem; } .device.smartphone { width: 120px; height: 240px; } .mini-header { padding: 0.3rem; } .mini-logo { font-size: 0.5rem; } } /* ===== HERO ANTIGO RESPONSIVO ===== */ @media (max-width: 1024px) { .hero-content { grid-template-columns: 1fr; gap: 2rem; } .hero-images { grid-template-columns: 1fr; } } @media (max-width: 768px) { .hero { padding: 3rem 0; } h1 { font-size: 2rem; } .hero::before { font-size: 30vw; right: -10vw; } } /* ===== SERVIÇOS ===== */ .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-bottom: 3rem; } .service-card { background: var(--glass-bg); backdrop-filter: blur(20px) saturate(180%); border: 1px solid var(--glass-border); border-radius: 16px; padding: 2rem; text-align: center; transition: all 0.3s ease; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); position: relative; overflow: hidden; } .service-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--accent-gold), transparent); opacity: 0; transition: opacity 0.3s ease; } .service-card:hover { border-color: rgba(201, 146, 42, 0.3); transform: translateY(-6px); box-shadow: 0 8px 32px rgba(201, 146, 42, 0.3), 0 0 60px rgba(201, 146, 42, 0.1); } .service-card:hover::before { opacity: 1; } .service-card span { display: block; font-size: 2.5rem; margin-bottom: 1rem; transition: all 0.3s ease; } .service-card:hover span { animation: bounce 0.6s ease; } .service-card h3 { margin-bottom: 0.5rem; color: var(--text-primary); font-size: 1.2rem; } .service-card p { margin: 0; font-size: 0.95rem; } .services-footer { background-color: var(--tertiary-dark); border: 1px solid var(--border-light); border-radius: 12px; padding: 2rem; text-align: center; } .services-footer p { margin-bottom: 1.5rem; } @media (max-width: 1024px) { .services-grid { grid-template-columns: repeat(2, 1fr); } } @media (max-width: 768px) { .services-grid { grid-template-columns: 1fr; } h2 { font-size: 1.8rem; } } /* ===== DIFERENCIAIS ===== */ .diferenciais-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; } .diferencial-item { text-align: center; } .diferencial-icon { font-size: 2.5rem; margin-bottom: 1rem; display: block; } .diferencial-item h3 { color: var(--text-primary); margin-bottom: 1rem; } @media (max-width: 1024px) { .diferenciais-grid { grid-template-columns: repeat(2, 1fr); } } @media (max-width: 768px) { .diferenciais-grid { grid-template-columns: 1fr; } } /* ===== SOBRE ===== */ .sobre-content { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; } .sobre-images { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; } .sobre-badge { position: absolute; bottom: 20px; left: 20px; background: rgba(201, 146, 42, 0.15); border: 1px solid var(--accent-gold); border-radius: 6px; padding: 0.5rem 1rem; font-size: 0.75rem; color: var(--text-primary); z-index: 10; } .sobre-text h2 { margin-bottom: 2rem; } .sobre-text p { margin-bottom: 1.5rem; } @media (max-width: 1024px) { .sobre-content { grid-template-columns: 1fr; gap: 2rem; } .sobre-images { order: 2; } } @media (max-width: 768px) { .sobre-images { grid-template-columns: 1fr; } } /* ===== FAQ ===== */ .faq-container { max-width: 800px; margin: 0 auto; } .faq-item { border-bottom: 1px solid var(--border-light); margin-bottom: 0; } .faq-question { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 0; cursor: pointer; user-select: none; font-weight: 600; color: var(--text-primary); transition: color 0.2s ease; background: none; border: none; width: 100%; text-align: left; } .faq-question:hover { color: var(--accent-gold); } .faq-toggle { font-size: 1.2rem; transition: transform 0.3s ease; flex-shrink: 0; margin-left: 1rem; } .faq-item.open .faq-toggle { transform: rotate(180deg); } .faq-answer { max-height: 0; overflow: hidden; transition: all 0.3s ease; opacity: 0; } .faq-item.open .faq-answer { max-height: 500px; opacity: 1; padding-bottom: 1.5rem; } .faq-item.open { border-left: 3px solid var(--accent-gold); padding-left: 1rem; } /* ===== DEPOIMENTOS ===== */ .testimonials-container { position: relative; } .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; } .testimonial-card { background: var(--glass-bg); backdrop-filter: blur(20px) saturate(180%); border: 1px solid var(--glass-border); border-radius: 16px; padding: 2rem; border-left: 4px solid var(--accent-gold); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); transition: all 0.3s ease; } .testimonial-card:hover { box-shadow: 0 8px 32px rgba(201, 146, 42, 0.3), 0 0 60px rgba(201, 146, 42, 0.1); border-color: rgba(201, 146, 42, 0.3); } .testimonial-stars { color: var(--accent-gold); margin-bottom: 1rem; font-size: 1.2rem; letter-spacing: 0.2rem; } .testimonial-text { font-style: italic; color: var(--text-primary); margin-bottom: 1rem; line-height: 1.8; } .testimonial-author { font-weight: 600; color: var(--accent-gold); } .testimonial-source { font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.5rem; } .carousel-controls { display: none; justify-content: center; gap: 1rem; margin-top: 2rem; } .carousel-btn { width: 48px; height: 48px; border-radius: 50%; background-color: var(--tertiary-dark); border: 1px solid var(--border-light); color: var(--accent-gold); cursor: pointer; font-size: 1.2rem; transition: all 0.2s ease; } .carousel-btn:hover { background-color: var(--accent-gold); color: var(--primary-dark); } @media (max-width: 768px) { .testimonials-grid { grid-template-columns: 1fr; display: none; } .testimonials-grid.carousel-active { display: grid; } .carousel-controls { display: flex; } .testimonials-carousel { overflow-x: auto; scroll-behavior: smooth; } .testimonial-card { min-width: 100%; scroll-snap-align: start; } } /* ===== CTA FINAL ===== */ .cta-final { text-align: center; } .cta-final h2 { margin-bottom: 1rem; } .cta-final > p { font-size: 1.1rem; margin-bottom: 2rem; } .cta-final-seals { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 2rem; font-size: 0.85rem; } .cta-final-seals span { color: var(--text-secondary); } /* ===== FOOTER ===== */ footer { background-color: #050505; border-top: 1px solid var(--border-light); padding: 3rem 0 1rem; } .footer-content { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border-light); } .footer-section h3 { color: var(--accent-gold); margin-bottom: 1rem; } .footer-section p, .footer-section a { color: var(--text-secondary); text-decoration: none; margin-bottom: 0.5rem; display: block; transition: color 0.2s ease; } .footer-section a:hover { color: var(--accent-gold); } .footer-bottom { text-align: center; color: #555555; font-size: 0.75rem; padding: 1rem 0; } @media (max-width: 768px) { .footer-content { grid-template-columns: 1fr; gap: 2rem; } } /* ===== STICKY CTA BAR ===== */ .sticky-cta-bar { position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%); background: var(--glass-bg); backdrop-filter: blur(20px) saturate(180%); border: 1px solid var(--glass-border); border-radius: 50px; padding: 0.75rem 1.5rem; z-index: 9998; display: none; flex-wrap: wrap; justify-content: center; gap: 0.5rem; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); animation: slideUp 0.4s ease; } .sticky-cta-bar.visible { display: flex; } .sticky-cta-bar .btn { padding: 0.5rem 1rem; font-size: 0.85rem; } @keyframes slideUp { from { opacity: 0; transform: translateX(-50%) translateY(50px); } to { opacity: 1; transform: translateX(-50%) translateY(0); } } /* ===== BOTÃO WHATSAPP FLUTUANTE ===== */ .whatsapp-floating { position: fixed; bottom: 2rem; right: 2rem; width: 64px; height: 64px; background-color: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); z-index: 9999; transition: all 0.3s ease; animation: pulse 2s infinite; } .whatsapp-floating:hover { background-color: #20BA5A; transform: scale(1.1); animation: none; } .whatsapp-floating svg { width: 32px; height: 32px; fill: white; } @keyframes pulse { 0%, 100% { box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); } 50% { box-shadow: 0 4px 25px rgba(37, 211, 102, 0.4); } } @media (max-width: 768px) { .whatsapp-floating { width: 55px; height: 55px; bottom: 1.5rem; right: 1.5rem; } .whatsapp-floating svg { width: 28px; height: 28px; } } /* ===== RESPONSIVIDADE GERAL ===== */ @media (max-width: 480px) { .container { padding: 0 1rem; } section { padding: 3rem 0; } h1 { font-size: 1.8rem; } h2 { font-size: 1.4rem; } .btn { padding: 0.875rem 1.5rem; font-size: 0.95rem; } .hero { padding: 2rem 0; } .services-grid { gap: 1rem; } .service-card { padding: 1.5rem; } } </style> </head> <body> <!-- ===== HEADER ===== --> <header id="header"> <div class="container"> <div class="header-content"> <a href="#" class="logo">Dra Paula Márcula e Dr Breno Amorim</a> <nav class="nav"> <a href="#servicos">Serviços</a> <a href="#sobre">Sobre</a> <a href="#avaliacoes">Avaliações</a> <a href="https://wa.me/5587981785458?text=Olá%2C%20gostaria%20de%20falar%20com%20um%20advogado%20trabalhista.%20Pode%20me%20ajudar%3F" class="btn btn-arrow" target="_blank">Falar com especialista</a> </nav> </div> </div> </header> <!-- ===== STICKY CTA BAR ===== --> <div class="sticky-cta-bar" id="stickyCTABar"> <span style="color: var(--text-secondary); font-size: 0.9rem; white-space: nowrap;">Consulta Gratuita</span> <a href="https://wa.me/5587981785458?text=Olá%2C%20gostaria%20de%20falar%20com%20um%20advogado%20trabalhista.%20Pode%20me%20ajudar%3F" class="btn" target="_blank" style="font-size: 0.85rem;">Falar Agora</a> </div> <!-- ===== HERO 3D ===== --> <section class="hero-3d"> <div class="hero-3d-content"> <div class="badge-premium">DIREITO DO TRABALHO</div> <h1>Seus Direitos <span class="gold">Defendidos</span></h1> <p class="hero-3d-subtitle">Atendimento especializado 100% online em todo o Brasil</p> <a href="https://wa.me/5587981785458?text=Olá%2C%20gostaria%20de%20falar%20com%20um%20advogado%20trabalhista.%20Pode%20me%20ajudar%3F" class="btn btn-arrow" target="_blank">Fale com Especialista</a> </div> <!-- Devices Showcase --> <div class="devices-showcase"> <!-- Desktop Monitor --> <div class="device desktop" id="deviceDesktop"> <div class="device-content"> <div class="mini-header"> <div class="mini-logo">B&A Advocacia</div> <div class="mini-nav"> <span></span><span></span><span></span> </div> </div> <div class="mini-hero"> <h3>Direito Trabalhista</h3> <p style="font-size: 0.7rem; color: rgba(255,255,255,0.6); margin: 0.5rem 0; line-height: 1.3;">Proteção de direitos trabalhistas com especialistas dedicados</p> <div class="mini-btn"></div> </div> <div style="padding: 0.5rem; font-size: 0.65rem; color: rgba(255,255,255,0.7);"> <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem;"> <div style="background: rgba(201, 146, 42, 0.1); border: 1px solid rgba(201, 146, 42, 0.3); padding: 0.3rem; border-radius: 4px; text-align: center;">Rescisão</div> <div style="background: rgba(201, 146, 42, 0.1); border: 1px solid rgba(201, 146, 42, 0.3); padding: 0.3rem; border-radius: 4px; text-align: center;">Horas Extras</div> </div> </div> </div> </div> <!-- Laptop --> <div class="device laptop" id="deviceLaptop"> <div class="device-content"> <div class="mini-header"> <div class="mini-logo" style="font-size: 0.6rem;">Especialistas em Direito do Trabalho</div> <div class="mini-nav"> <span></span><span></span> </div> </div> <div style="padding: 0.8rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; font-size: 0.6rem;"> <div style="background: rgba(26, 26, 26, 0.7); border: 1px solid rgba(201, 146, 42, 0.3); border-radius: 6px; padding: 0.5rem; text-align: center; color: rgba(255,255,255,0.8);"> <div style="font-weight: 600; margin-bottom: 0.3rem;">Dra Paula Márcula</div> <div style="font-size: 0.5rem; color: var(--accent-gold);">OAB</div> </div> <div style="background: rgba(26, 26, 26, 0.7); border: 1px solid rgba(201, 146, 42, 0.3); border-radius: 6px; padding: 0.5rem; text-align: center; color: rgba(255,255,255,0.8);"> <div style="font-weight: 600; margin-bottom: 0.3rem;">Dr Breno Amorim</div> <div style="font-size: 0.5rem; color: var(--accent-gold);">OAB/PE 6.578</div> </div> </div> </div> </div> <!-- Tablet --> <div class="device tablet" id="deviceTablet"> <div class="device-content"> <div class="mini-header" style="padding: 0.75rem; flex-direction: column; gap: 0.3rem;"> <div class="mini-logo" style="font-size: 0.6rem; text-align: center;">Áreas de Atuação</div> </div> <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; padding: 0.5rem; font-size: 0.55rem; color: rgba(255,255,255,0.7);"> <div style="background: rgba(201, 146, 42, 0.1); border: 1px solid rgba(201, 146, 42, 0.2); border-radius: 6px; padding: 0.4rem; text-align: center;"> <div>Rescisão</div> </div> <div style="background: rgba(201, 146, 42, 0.1); border: 1px solid rgba(201, 146, 42, 0.2); border-radius: 6px; padding: 0.4rem; text-align: center;"> <div>Horas Extras</div> </div> <div style="background: rgba(201, 146, 42, 0.1); border: 1px solid rgba(201, 146, 42, 0.2); border-radius: 6px; padding: 0.4rem; text-align: center;"> <div>Danos Morais</div> </div> <div style="background: rgba(201, 146, 42, 0.1); border: 1px solid rgba(201, 146, 42, 0.2); border-radius: 6px; padding: 0.4rem; text-align: center;"> <div>Vínculo Trabalhista</div> </div> </div> </div> </div> <!-- Smartphone --> <div class="device smartphone" id="deviceSmartphone"> <div class="device-content"> <div class="mini-header" style="padding: 0.5rem; justify-content: center;"> <div class="mini-logo" style="font-size: 0.55rem;">Advocacia</div> </div> <div style="padding: 0.5rem; text-align: center; font-size: 0.6rem; color: rgba(255,255,255,0.8);"> <div style="margin-bottom: 0.5rem; font-weight: 600;">Direito do Trabalho</div> <div style="background: rgba(26, 26, 26, 0.7); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; height: 20px; margin-bottom: 0.3rem;"></div> <div style="background: rgba(26, 26, 26, 0.7); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; height: 20px; margin-bottom: 0.3rem;"></div> <div style="background: rgba(26, 26, 26, 0.7); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; height: 20px;"></div> </div> </div> </div> </div> </section> <!-- ===== SERVIÇOS ===== --> <section class="bg-secondary fade-in" id="servicos"> <div class="container"> <div class="section-header fade-in"> <div class="badge">Áreas de Atuação</div> <h2>Se você está passando por <span class="gold">alguma dessas situações</span>, podemos te ajudar</h2> </div> <div class="services-grid"> <div class="service-card fade-in"> <span></span> <h3>Reconhecimento de Vínculo</h3> <p>Trabalhava sem carteira assinada?</p> </div> <div class="service-card fade-in"> <span></span> <h3>Rescisão Indireta</h3> <p>Seu empregador descumpriu o contrato?</p> </div> <div class="service-card fade-in"> <span></span> <h3>Horas Extras</h3> <p>Fez horas extras e não recebeu?</p> </div> <div class="service-card fade-in"> <span></span> <h3>Verbas Rescisórias</h3> <p>Foi demitido e não recebeu tudo?</p> </div> <div class="service-card fade-in"> <span></span> <h3>Acidente de Trabalho</h3> <p>Sofreu acidente ou doença no trabalho?</p> </div> <div class="service-card fade-in"> <span></span> <h3>Danos Morais</h3> <p>Sofreu assédio ou humilhação no trabalho?</p> </div> <div class="service-card fade-in"> <span></span> <h3>Insalubridade e Periculosidade</h3> <p>Trabalha em condições perigosas?</p> </div> <div class="service-card fade-in"> <span></span> <h3>Reversão de Justa Causa</h3> <p>Foi demitido por justa causa injustamente?</p> </div> </div> <div class="services-footer fade-in"> <p>Não encontrou sua situação? Fale conosco — analisamos qualquer caso trabalhista.</p> <a href="https://wa.me/5587981785458?text=Olá%2C%20gostaria%20de%20falar%20com%20um%20advogado%20trabalhista.%20Pode%20me%20ajudar%3F" class="btn btn-arrow" target="_blank">Falar com advogado</a> </div> </div> </section> <!-- ===== DIFERENCIAIS ===== --> <section class="fade-in"> <div class="container"> <div class="section-header fade-in"> <div class="badge">Por que nos escolher</div> <h2>Razões para <span class="gold">confiar no nosso escritório</span></h2> </div> <div class="diferenciais-grid"> <div class="diferencial-item fade-in"> <div class="diferencial-icon"></div> <h3>Atendimento Online<br>em Todo o Brasil</h3> <p>Não importa onde você está — atendemos em qualquer estado, 100% online, sem precisar sair de casa.</p> </div> <div class="diferencial-item fade-in"> <div class="diferencial-icon"></div> <h3>Resposta em<br>até 1 hora</h3> <p>Você não fica no escuro. A Dra. Paula e o Dr. Breno respondem com agilidade para você saber logo se tem um caso.</p> </div> <div class="diferencial-item fade-in"> <div class="diferencial-icon"></div> <h3>Comunicação<br>Sem Juridiquês</h3> <p>Explicamos tudo em linguagem simples. Você entende cada etapa do seu processo, sem surpresas.</p> </div> <div class="diferencial-item fade-in"> <div class="diferencial-icon"></div> <h3>Experiência<br>Comprovada</h3> <p>Anos de atuação com processos em Tribunais Regionais do Trabalho de todo o país. Sua causa em mãos experientes.</p> </div> </div> </div> </section> <!-- ===== SOBRE ===== --> <section class="bg-secondary fade-in" id="sobre"> <div class="container"> <div class="section-header fade-in"> <div class="badge">Quem somos</div> <h2>Sobre Nós</h2> </div> <div class="sobre-content fade-in"> <div class="sobre-images fade-in"> <div class="foto-placeholder"> <span></span> <p>Dra. Paula Márcula</p> </div> <div class="foto-placeholder"> <span></span> <p>Dr. Breno Amorim</p> </div> <div class="sobre-badge">Os advogados por trás do escritório</div> </div> <div class="sobre-text fade-in"> <h2>Dra. Paula Márcula & <span class="gradient-text">Dr. Breno Amorim</span></h2> <p>A Dra. Paula Márcula e o Dr. Breno Amorim são especialistas dedicados em Direito do Trabalho, comprometidos em defender seus direitos com ética, seriedade e excelência. Juntos, formam uma equipe que abraça todos os tipos de processos trabalhistas.</p> <p>Com ampla experiência em Tribunais Regionais do Trabalho de múltiplos estados, já representaram centenas de trabalhadores em todo o Brasil — desde processos de rescisão até ações de danos morais e direitos coletivos.</p> <p>Cada caso é tratado com atenção individual. Nossa prioridade é que você entenda cada etapa do processo — sem juridiquês, sem enrolação, com clareza e resultado.</p> <a href="https://wa.me/5587981785458?text=Olá%2C%20gostaria%20de%20falar%20com%20um%20advogado%20trabalhista.%20Pode%20me%20ajudar%3F" class="btn btn-arrow" target="_blank">Quero falar com um especialista</a> </div> </div> </div> </section> <!-- ===== FAQ ===== --> <section class="fade-in" id="faq"> <div class="container"> <div class="section-header fade-in"> <div class="badge">Dúvidas Frequentes</div> <h2>Perguntas que <span class="gold">mais recebemos</span></h2> </div> <div class="faq-container fade-in"> <div class="faq-item"> <button class="faq-question"> <span>As audiências podem ser feitas por videochamada?</span> <span class="faq-toggle">▼</span> </button> <div class="faq-answer"> <p>Sim. O CNJ aprovou o Juízo 100% digital, permitindo que todos os atos processuais sejam realizados sem comparecimento presencial. Você não precisa se deslocar em nenhuma etapa.</p> </div> </div> <div class="faq-item"> <button class="faq-question"> <span>Moro em outra cidade — isso afeta o atendimento?</span> <span class="faq-toggle">▼</span> </button> <div class="faq-answer"> <p>Não. A Dra. Paula e o Dr. Breno atendem 100% online em todo o Brasil. Reuniões por videoconferência, documentos compartilhados digitalmente e comunicação constante. A distância não afeta em nada a qualidade do serviço.</p> </div> </div> <div class="faq-item"> <button class="faq-question"> <span>Vocês fazem cálculo de rescisão?</span> <span class="faq-toggle">▼</span> </button> <div class="faq-answer"> <p>Realizamos os cálculos quando o objetivo é mover uma ação trabalhista. Para cálculos avulsos, consulte-nos sobre o valor do serviço.</p> </div> </div> <div class="faq-item"> <button class="faq-question"> <span>Meus dados ficam seguros?</span> <span class="faq-toggle">▼</span> </button> <div class="faq-answer"> <p>Sim. Utilizamos tecnologias com criptografia e seguimos integralmente a LGPD. Seus documentos e informações pessoais são tratados com total sigilo e confidencialidade.</p> </div> </div> <div class="faq-item"> <button class="faq-question"> <span>Meu caso é complexo — consigo ser atendido online?</span> <span class="faq-toggle">▼</span> </button> <div class="faq-answer"> <p>Sim. A equipe está preparada para casos complexos. Usamos ferramentas digitais avançadas para organizar todas as informações e mantemos você atualizado em cada etapa do processo.</p> </div> </div> </div> <div style="text-align: center; margin-top: 3rem;" class="fade-in"> <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Ainda tem dúvida?</p> <a href="https://wa.me/5587981785458?text=Olá%2C%20gostaria%20de%20falar%20com%20um%20advogado%20trabalhista.%20Pode%20me%20ajudar%3F" class="btn btn-outline btn-arrow" target="_blank">Falar com advogado</a> </div> </div> </section> <!-- ===== DEPOIMENTOS ===== --> <section class="bg-secondary fade-in" id="avaliacoes"> <div class="container"> <div class="section-header fade-in"> <div class="badge">Avaliações</div> <h2>O que dizem <span class="gold">nossos clientes</span></h2> <p>Avaliações verificadas do Google</p> </div> <div class="testimonials-container fade-in"> <div class="testimonials-grid fade-in"> <div class="testimonial-card fade-in"> <div class="testimonial-stars">★★★★★</div> <p class="testimonial-text">"Vc me ajudou bastante. Seu atendimento é nota 10000. Muito obrigada mesmo pela atenção"</p> <div class="testimonial-author">Ana Paula Santos</div> <div class="testimonial-source">via Google</div> </div> <div class="testimonial-card fade-in"> <div class="testimonial-stars">★★★★★</div> <p class="testimonial-text">"Deus colocou minha causa em mãos abençoadas. Causa muito bem conduzida, com empatia e atualização constante do caso. Me senti totalmente confiante. Recomendo muito!"</p> <div class="testimonial-author">Alieta Gonçalves</div> <div class="testimonial-source">via Google</div> </div> <div class="testimonial-card fade-in"> <div class="testimonial-stars">★★★★★</div> <p class="testimonial-text">"Ótima pessoa, responde rápido, esclareceu todas minhas dúvidas, excelente profissional. Obs: tudo isso em um domingo às 21h da noite."</p> <div class="testimonial-author">Yuri Junqueira</div> <div class="testimonial-source">via Google</div> </div> </div> <div class="carousel-controls"> <button class="carousel-btn" id="prev-btn">←</button> <button class="carousel-btn" id="next-btn">→</button> </div> </div> </div> </section> <!-- ===== CTA FINAL ===== --> <section class="bg-gradient fade-in"> <div class="container"> <div class="cta-final fade-in"> <div class="badge">Atendimento Online · Todo o Brasil</div> <h2>Seu problema trabalhista <span class="gold">tem solução.</span></h2> <p>Fale agora com a Dra. Paula ou o Dr. Breno. Atendimento 100% online, sem sair de casa.</p> <a href="https://wa.me/5587981785458?text=Olá%2C%20gostaria%20de%20falar%20com%20um%20advogado%20trabalhista.%20Pode%20me%20ajudar%3F" class="btn btn-arrow" target="_blank">Analisar meu caso agora</a> <div class="cta-final-seals"> <span> Resposta em até 1h</span> <span> Consulta inicial gratuita</span> <span> Atendimento em todo o Brasil</span> </div> </div> </div> </section> <!-- ===== CTA DESTACADO ===== --> <section class="bg-secondary fade-in"> <div class="container"> <div style="background: linear-gradient(135deg, rgba(201, 146, 42, 0.15) 0%, rgba(201, 146, 42, 0.08) 100%); border: 1px solid rgba(201, 146, 42, 0.3); border-radius: 20px; padding: 3rem; text-align: center; margin-bottom: 0;"> <h3 style="margin-bottom: 1.5rem; font-size: 2rem;">Pronto Para Defender Seus Direitos?</h3> <p style="font-size: 1.05rem; color: var(--text-secondary); margin-bottom: 2rem;">Escolha a forma de contato que mais te convém:</p> <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;"> <a href="https://wa.me/5587981785458?text=Olá%2C%20gostaria%20de%20falar%20com%20um%20advogado%20trabalhista.%20Pode%20me%20ajudar%3F" target="_blank" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; background: rgba(26, 26, 26, 0.5); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; text-decoration: none; transition: all 0.3s ease;"> <div style="font-size: 2.5rem; margin-bottom: 0.5rem;"></div> <strong style="color: #fff; margin-bottom: 0.5rem;">WhatsApp</strong> <span style="color: var(--text-secondary); font-size: 0.9rem;">(87) 98178-5458</span> </a> <a href="tel:+558798178548" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; background: rgba(26, 26, 26, 0.5); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; text-decoration: none; transition: all 0.3s ease;"> <div style="font-size: 2.5rem; margin-bottom: 0.5rem;"></div> <strong style="color: #fff; margin-bottom: 0.5rem;">Telefone</strong> <span style="color: var(--text-secondary); font-size: 0.9rem;">(87) 98178-5458</span> </a> <a href="mailto:contato@brenosamorimadvocacia.com" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; background: rgba(26, 26, 26, 0.5); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; text-decoration: none; transition: all 0.3s ease;"> <div style="font-size: 2.5rem; margin-bottom: 0.5rem;"></div> <strong style="color: #fff; margin-bottom: 0.5rem;">E-mail</strong> <span style="color: var(--text-secondary); font-size: 0.9rem;">contato@brenosamorimadvocacia.com</span> </a> </div> <p style="color: var(--text-secondary); font-size: 0.9rem;">Consulta inicial gratuita • Resposta em até 1 hora • Atendimento em todo o Brasil</p> </div> </div> </section> <!-- ===== FOOTER ===== --> <footer> <div class="container"> <div class="footer-content"> <div class="footer-section"> <h3>Dra Paula Márcula e Dr Breno Amorim Advocacia</h3> <p>Direito do Trabalho · Atendimento Online</p> </div> <div class="footer-section"> <h3>Contato</h3> <a href="https://wa.me/5587981785458?text=Olá%2C%20gostaria%20de%20falar%20com%20um%20advogado%20trabalhista.%20Pode%20me%20ajudar%3F" target="_blank"> WhatsApp: (87) 98178-5458</a> <a href="mailto:contato@brenosamorimadvocacia.com"> E-mail: contato@brenosamorimadvocacia.com</a> <a href="https://instagram.com" target="_blank">Instagram: @INSTAGRAM_HANDLE</a> </div> <div class="footer-section"> <h3>Credenciais</h3> <p><strong>Dra. Paula Márcula</strong><br>OAB: A CONFIRMAR</p> <p><strong>Dr. Breno S. Amorim</strong><br>OAB/PE: 6.578</p> <p><strong>CNPJ:</strong> 60.837.337/0001-80</p> </div> </div> <div class="footer-bottom"> <p>© 2025 Dra Paula Márcula e Dr Breno Amorim Advocacia — Todos os direitos reservados. Não temos ligação com o Google, Facebook ou outras redes sociais. Atuamos exclusivamente com a prestação de serviços jurídicos.</p> </div> </div> </footer> <!-- ===== BOTÃO WHATSAPP FLUTUANTE ===== --> <a href="https://wa.me/5587981785458?text=Olá%2C%20gostaria%20de%20falar%20com%20um%20advogado%20trabalhista.%20Pode%20me%20ajudar%3F" class="whatsapp-floating" title="Falar no WhatsApp" target="_blank"> <svg viewBox="0 0 24 24"> <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.869 1.171c-1.519.761-2.823 1.778-3.976 3.246C1.86 10.487.59 12.774.129 15.394c-.461 2.62.32 5.338 2.247 7.465.896 1.005 1.93 1.884 3.057 2.6.75.467 1.537.9 2.35 1.195 1.632.617 3.42.617 5.052 0 .812-.295 1.6-.728 2.35-1.195 1.127-.716 2.161-1.595 3.057-2.6 1.926-2.127 2.708-4.845 2.247-7.465-.46-2.62-1.73-4.907-3.488-6.589-1.153-1.468-2.457-2.485-3.976-3.246a9.87 9.87 0 00-4.869-1.171Z"/> </svg> </a> <!-- ===== SCRIPTS ===== --> <script> // ===== FADE-IN NO SCROLL ===== const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }; const observer = new IntersectionObserver(function(entries) { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); } }); }, observerOptions); document.querySelectorAll('.fade-in').forEach(el => { observer.observe(el); }); // ===== HEADER BLUR AO ROLAR ===== const header = document.getElementById('header'); const stickyCTABar = document.getElementById('stickyCTABar'); window.addEventListener('scroll', function() { if (window.scrollY > 60) { header.classList.add('scrolled'); } else { header.classList.remove('scrolled'); } // Mostrar sticky CTA bar após scroll de 500px if (window.scrollY > 500) { stickyCTABar.classList.add('visible'); } else { stickyCTABar.classList.remove('visible'); } }); // ===== ACORDEÃO FAQ ===== document.querySelectorAll('.faq-question').forEach(btn => { btn.addEventListener('click', function() { const item = this.parentElement; const isOpen = item.classList.contains('open'); // Fecha todos os outros document.querySelectorAll('.faq-item').forEach(i => { i.classList.remove('open'); }); // Abre ou fecha o atual if (!isOpen) { item.classList.add('open'); } }); }); // ===== CAROUSEL DEPOIMENTOS (Mobile) ===== let currentTestimonial = 0; const testimonialCards = document.querySelectorAll('.testimonial-card'); const totalTestimonials = testimonialCards.length; function showTestimonial(index) { testimonialCards.forEach((card, i) => { card.style.display = i === index ? 'block' : 'none'; }); } document.getElementById('prev-btn').addEventListener('click', function() { currentTestimonial = (currentTestimonial - 1 + totalTestimonials) % totalTestimonials; showTestimonial(currentTestimonial); }); document.getElementById('next-btn').addEventListener('click', function() { currentTestimonial = (currentTestimonial + 1) % totalTestimonials; showTestimonial(currentTestimonial); }); // Auto-avança a cada 5s no mobile function autoSlide() { if (window.innerWidth <= 768) { currentTestimonial = (currentTestimonial + 1) % totalTestimonials; showTestimonial(currentTestimonial); } } setInterval(autoSlide, 5000); // Inicializa mostrando o primeiro if (window.innerWidth <= 768) { showTestimonial(0); } // ===== SMOOTH SCROLL (já funcionava com scroll-behavior no CSS) ===== document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function(e) { const href = this.getAttribute('href'); if (href === '#') return; e.preventDefault(); const target = document.querySelector(href); if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); }); // ===== PARALLAX EFFECT PARA DEVICES 3D ===== const isDesktopScreen = window.innerWidth > 768; // Desativar em mobile window.addEventListener('scroll', function() { if (!isDesktopScreen) return; // Pular se for mobile const scrollY = window.scrollY; // Apenas aplica parallax se o device existe const deviceDesktop = document.getElementById('deviceDesktop'); const deviceLaptop = document.getElementById('deviceLaptop'); const deviceTablet = document.getElementById('deviceTablet'); const deviceSmartphone = document.getElementById('deviceSmartphone'); if (deviceDesktop && window.innerWidth > 1024) { deviceDesktop.style.transform = `translate(-50%, -50%) perspective(1200px) rotateY(-5deg) rotateX(2deg) translateY(${scrollY * 0.1}px)`; } if (deviceLaptop && window.innerWidth > 1024) { deviceLaptop.style.transform = `perspective(1000px) rotateY(15deg) rotateX(5deg) translateY(${scrollY * 0.15}px)`; } if (deviceTablet && window.innerWidth > 1440) { deviceTablet.style.transform = `perspective(800px) rotateY(-12deg) rotateX(3deg) translateY(${scrollY * 0.2}px)`; } if (deviceSmartphone) { deviceSmartphone.style.transform = `perspective(600px) rotateY(10deg) rotateX(3deg) translateY(${scrollY * 0.25}px)`; } }); // ===== PARALLAX EFFECT (ANTIGO) ===== const parallaxElements = document.querySelectorAll('[data-parallax]'); window.addEventListener('scroll', function() { const scrollY = window.scrollY; parallaxElements.forEach(el => { const speed = el.getAttribute('data-parallax') || 0.5; el.style.transform = `translateY(${scrollY * speed}px)`; }); }); // ===== PARALLAX PARA IMAGENS DA SEÇÃO SOBRE ===== const sobreImages = document.querySelectorAll('.sobre-images .foto-placeholder'); window.addEventListener('scroll', function() { const scrollY = window.scrollY; sobreImages.forEach((img, index) => { const offset = 200 + (index * 50); // Trigger em posições diferentes if (window.innerWidth > 768) { img.style.transform = `translateY(${(scrollY - offset) * 0.2}px)`; } }); }); // ===== LINK SECUNDÁRIO NO HERO ===== const heroBadge = document.querySelector('.badge'); if (heroBadge && !heroBadge.parentElement.querySelector('a')) { heroBadge.style.cursor = 'pointer'; heroBadge.addEventListener('click', function() { document.getElementById('servicos').scrollIntoView({ behavior: 'smooth' }); }); } // ===== CONTADOR ANIMADO PARA "1H" ===== function animateCounter(element) { if (element.textContent.includes('1h') && !element.classList.contains('animated')) { element.classList.add('animated'); const observer = new IntersectionObserver(entries => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.style.animation = 'pulse 2s infinite'; observer.unobserve(entry.target); } }); }); observer.observe(element); } } document.querySelectorAll('*').forEach(el => { if (el.textContent.includes('1h')) animateCounter(el); }); // ===== RESPETA PREFERÊNCIA DE MOTION REDUZIDA ===== const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)'); if (prefersReducedMotion.matches) { document.querySelectorAll('[class*="animation"], [class*="fade-in"]').forEach(el => { el.style.animation = 'none'; el.style.transition = 'none'; }); } </script> </body> </html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Advogado trabalhista online - Dra. Paula Márcula e Dr. Breno Amorim. Atendimento 100% online em todo o Brasil.">
+  <meta name="keywords" content="advogado trabalhista, direito do trabalho, rescisão, horas extras">
+  <title>Advogado Trabalhista Online | Dra. Paula & Dr. Breno</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ===== RESET & VARIÁVEIS ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary-dark: #0A0A0A;
+      --secondary-dark: #111111;
+      --tertiary-dark: #1A1A1A;
+      --accent-gold: #C9922A;
+      --accent-gold-hover: #D4A843;
+      --text-primary: #FFFFFF;
+      --text-secondary: #A0A0A0;
+      --border-light: rgba(255, 255, 255, 0.06);
+      --glass-bg: rgba(26, 26, 26, 0.7);
+      --glass-border: rgba(255, 255, 255, 0.1);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text-primary);
+      background-color: var(--primary-dark);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: var(--primary-dark);
+      border-bottom: 1px solid var(--border-light);
+      padding: 1.5rem 0;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      text-decoration: none;
+    }
+
+    .nav {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .nav a {
+      color: var(--text-primary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav a:hover {
+      color: var(--accent-gold);
+    }
+
+    /* ===== BOTÃO ===== */
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--accent-gold);
+      color: var(--primary-dark);
+      text-decoration: none;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .btn:hover {
+      background-color: var(--accent-gold-hover);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      color: var(--accent-gold);
+      border: 1px solid var(--accent-gold);
+    }
+
+    /* ===== SEÇÃO PADRÃO ===== */
+    section {
+      padding: 6rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    section.bg-secondary {
+      background-color: var(--secondary-dark);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-header h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+
+    .section-header p {
+      color: var(--text-secondary);
+      margin-bottom: 0.5rem;
+    }
+
+    .gold {
+      color: var(--accent-gold);
+    }
+
+    /* ===== HERO 3D ===== */
+    .hero-3d {
+      background: linear-gradient(180deg, #2A2A2A 0%, #0A0A0A 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: visible;
+      padding: 4rem 2rem;
+      position: relative;
+    }
+
+    .hero-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      width: 100%;
+    }
+
+    .hero-left {
+      position: relative;
+      z-index: 10;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      border: 1px solid rgba(201, 146, 42, 0.4);
+      color: var(--accent-gold);
+      border-radius: 4px;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+
+    .hero-left h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 4rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      line-height: 1.1;
+    }
+
+    .hero-3d-subtitle {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+      max-width: 500px;
+    }
+
+    .hero-right {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ===== DEVICES SHOWCASE ===== */
+    .devices-showcase {
+      position: relative;
+      width: 100%;
+      height: 600px;
+    }
+
+    .device {
+      position: absolute;
+      background: linear-gradient(135deg, #2A2A2A, #1A1A1A);
+      border-radius: 12px;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+      overflow: hidden;
+    }
+
+    .device.desktop {
+      width: 500px;
+      height: 312px;
+      border: 10px solid #1A1A1A;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) perspective(1200px) rotateY(-8deg) rotateX(5deg);
+      z-index: 3;
+    }
+
+    .device.laptop {
+      width: 380px;
+      height: 240px;
+      border: 8px solid #0A0A0A;
+      left: 5%;
+      top: 80px;
+      transform: perspective(1000px) rotateY(15deg) rotateX(3deg);
+      z-index: 2;
+    }
+
+    .device.tablet {
+      width: 280px;
+      height: 380px;
+      border: 10px solid #0A0A0A;
+      border-radius: 20px;
+      right: 8%;
+      top: 150px;
+      transform: perspective(800px) rotateY(-12deg) rotateX(2deg);
+      z-index: 2;
+      display: none;
+    }
+
+    .device.smartphone {
+      width: 140px;
+      height: 280px;
+      border: 8px solid #0A0A0A;
+      border-radius: 25px;
+      right: 5%;
+      bottom: 50px;
+      transform: perspective(600px) rotateY(10deg) rotateX(3deg);
+      z-index: 1;
+    }
+
+    .device-content {
+      width: 100%;
+      height: 100%;
+      background: var(--primary-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      color: var(--text-secondary);
+      text-align: center;
+      font-size: 0.8rem;
+    }
+
+    /* ===== SERVIÇOS ===== */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .service-card {
+      background: var(--glass-bg);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-radius: 16px;
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover {
+      border-color: rgba(201, 146, 42, 0.3);
+      transform: translateY(-6px);
+      box-shadow: 0 8px 32px rgba(201, 146, 42, 0.3);
+    }
+
+    .service-card h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .service-card p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+    }
+
+    /* ===== DIFERENCIAIS ===== */
+    .diferenciais-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+
+    .diferencial-item {
+      text-align: center;
+    }
+
+    .diferencial-item h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .diferencial-item p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+
+    /* ===== SOBRE ===== */
+    .sobre-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .sobre-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .foto-placeholder {
+      background: var(--glass-bg);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 3/4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
+      text-align: center;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .sobre-text h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .sobre-text p {
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+    }
+
+    /* ===== FAQ ===== */
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 0;
+      cursor: pointer;
+      background: none;
+      border: none;
+      width: 100%;
+      text-align: left;
+      color: var(--text-primary);
+      font-weight: 600;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+
+    .faq-question:hover {
+      color: var(--accent-gold);
+    }
+
+    .faq-toggle {
+      font-size: 1.2rem;
+      transition: transform 0.3s;
+    }
+
+    .faq-item.open .faq-toggle {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      opacity: 0;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 500px;
+      opacity: 1;
+      padding-bottom: 1.5rem;
+    }
+
+    /* ===== DEPOIMENTOS ===== */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .testimonial-card {
+      background: var(--glass-bg);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-left: 4px solid var(--accent-gold);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+
+    .testimonial-stars {
+      color: var(--accent-gold);
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .testimonial-text {
+      font-style: italic;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+    }
+
+    .testimonial-author {
+      font-weight: 600;
+      color: var(--accent-gold);
+    }
+
+    /* ===== CTA FINAL ===== */
+    .cta-final {
+      text-align: center;
+    }
+
+    .cta-final h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta-final p {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background-color: #050505;
+      border-top: 1px solid var(--border-light);
+      padding: 3rem 0 1rem;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .footer-section h3 {
+      color: var(--accent-gold);
+      margin-bottom: 1rem;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .footer-section p,
+    .footer-section a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      margin-bottom: 0.5rem;
+      display: block;
+      transition: color 0.2s;
+    }
+
+    .footer-section a:hover {
+      color: var(--accent-gold);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      color: #555555;
+      font-size: 0.75rem;
+      padding: 1rem 0;
+    }
+
+    /* ===== WHATSAPP FLUTUANTE ===== */
+    .whatsapp-floating {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 64px;
+      height: 64px;
+      background-color: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      z-index: 999;
+      transition: all 0.3s;
+    }
+
+    .whatsapp-floating:hover {
+      transform: scale(1.1);
+    }
+
+    /* ===== RESPONSIVIDADE ===== */
+    @media (max-width: 1440px) {
+      .hero-wrapper {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+
+      .device.desktop {
+        width: 400px;
+        height: 250px;
+      }
+
+      .device.laptop {
+        width: 300px;
+        height: 190px;
+      }
+
+      .device.smartphone {
+        width: 120px;
+        height: 240px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .hero-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .hero-left h1 {
+        font-size: 3rem;
+      }
+
+      .devices-showcase {
+        height: 400px;
+      }
+
+      .device.desktop {
+        width: 350px;
+        height: 220px;
+      }
+
+      .device.laptop {
+        width: 280px;
+        height: 178px;
+      }
+
+      .device.smartphone {
+        width: 110px;
+        height: 220px;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .diferenciais-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .sobre-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav {
+        display: none;
+      }
+
+      .hero-wrapper {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-left h1 {
+        font-size: 2rem;
+      }
+
+      .devices-showcase {
+        height: 300px;
+      }
+
+      .device.desktop {
+        width: 280px;
+        height: 175px;
+      }
+
+      .device.laptop {
+        left: -50px;
+        width: 220px;
+        height: 140px;
+      }
+
+      .device.smartphone {
+        width: 90px;
+        height: 180px;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .diferenciais-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-content {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-left h1 {
+        font-size: 1.5rem;
+      }
+
+      .hero-3d-subtitle {
+        font-size: 0.95rem;
+      }
+
+      .devices-showcase {
+        height: 250px;
+      }
+
+      .device.desktop {
+        display: none;
+      }
+
+      .device.laptop {
+        left: 50%;
+        transform: translate(-50%, 0) perspective(1000px) rotateY(15deg);
+        width: 180px;
+        height: 114px;
+      }
+
+      .device.smartphone {
+        width: 75px;
+        height: 150px;
+        right: 50%;
+        transform: translate(50%, 0) perspective(600px) rotateY(10deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="#" class="logo">Dra Paula Márcula & Dr Breno Amorim</a>
+        <nav class="nav">
+          <a href="#servicos">Serviços</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#avaliacoes">Avaliações</a>
+          <a href="https://wa.me/5587981785458" class="btn" target="_blank">Falar com especialista</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO 3D ===== -->
+  <section class="hero-3d">
+    <div class="container">
+      <div class="hero-wrapper">
+        <!-- Coluna Esquerda: Texto -->
+        <div class="hero-left">
+          <div class="hero-badge">DIREITO DO TRABALHO</div>
+          <h1>Seus Direitos <span class="gold">Defendidos</span></h1>
+          <p class="hero-3d-subtitle">Atendimento especializado 100% online em todo o Brasil</p>
+          <a href="https://wa.me/5587981785458" class="btn" target="_blank">Fale com Especialista</a>
+        </div>
+
+        <!-- Coluna Direita: Devices -->
+        <div class="hero-right">
+          <div class="devices-showcase">
+            <div class="device desktop">
+              <div class="device-content">Desktop View</div>
+            </div>
+            <div class="device laptop">
+              <div class="device-content">Laptop View</div>
+            </div>
+            <div class="device smartphone">
+              <div class="device-content">Mobile</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVIÇOS ===== -->
+  <section class="bg-secondary" id="servicos">
+    <div class="container">
+      <div class="section-header">
+        <h2>Se você está passando por <span class="gold">alguma dessas situações</span>, podemos te ajudar</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Reconhecimento de Vínculo</h3>
+          <p>Trabalhava sem carteira assinada?</p>
+        </div>
+        <div class="service-card">
+          <h3>Rescisão Indireta</h3>
+          <p>Seu empregador descumpriu o contrato?</p>
+        </div>
+        <div class="service-card">
+          <h3>Horas Extras</h3>
+          <p>Fez horas extras e não recebeu?</p>
+        </div>
+        <div class="service-card">
+          <h3>Verbas Rescisórias</h3>
+          <p>Foi demitido e não recebeu tudo?</p>
+        </div>
+        <div class="service-card">
+          <h3>Acidente de Trabalho</h3>
+          <p>Sofreu acidente ou doença no trabalho?</p>
+        </div>
+        <div class="service-card">
+          <h3>Danos Morais</h3>
+          <p>Sofreu assédio ou humilhação no trabalho?</p>
+        </div>
+        <div class="service-card">
+          <h3>Insalubridade</h3>
+          <p>Trabalha em condições perigosas?</p>
+        </div>
+        <div class="service-card">
+          <h3>Reversão de Justa Causa</h3>
+          <p>Foi demitido por justa causa injustamente?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DIFERENCIAIS ===== -->
+  <section id="diferenciais">
+    <div class="container">
+      <div class="section-header">
+        <h2>Razões para <span class="gold">confiar no nosso escritório</span></h2>
+      </div>
+      <div class="diferenciais-grid">
+        <div class="diferencial-item">
+          <h3>Atendimento Online em Todo o Brasil</h3>
+          <p>Não importa onde você está — atendemos em qualquer estado, 100% online, sem precisar sair de casa.</p>
+        </div>
+        <div class="diferencial-item">
+          <h3>Resposta em até 1 hora</h3>
+          <p>Você não fica no escuro. A Dra. Paula e o Dr. Breno respondem com agilidade para você saber logo se tem um caso.</p>
+        </div>
+        <div class="diferencial-item">
+          <h3>Comunicação Sem Juridiquês</h3>
+          <p>Explicamos tudo em linguagem simples. Você entende cada etapa do seu processo, sem surpresas.</p>
+        </div>
+        <div class="diferencial-item">
+          <h3>Experiência Comprovada</h3>
+          <p>Anos de atuação com processos em Tribunais Regionais do Trabalho de todo o país.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section class="bg-secondary" id="sobre">
+    <div class="container">
+      <div class="section-header">
+        <h2>Sobre Nós</h2>
+      </div>
+      <div class="sobre-content">
+        <div class="sobre-images">
+          <div class="foto-placeholder">
+            <div style="font-size: 3rem;">👩‍⚖️</div>
+            <p>Dra. Paula Márcula</p>
+          </div>
+          <div class="foto-placeholder">
+            <div style="font-size: 3rem;">👨‍⚖️</div>
+            <p>Dr. Breno Amorim</p>
+          </div>
+        </div>
+        <div class="sobre-text">
+          <h2>Dra. Paula Márcula & <span class="gold">Dr. Breno Amorim</span></h2>
+          <p>A Dra. Paula Márcula e o Dr. Breno Amorim são especialistas dedicados em Direito do Trabalho, comprometidos em defender seus direitos com ética, seriedade e excelência.</p>
+          <p>Com ampla experiência em Tribunais Regionais do Trabalho de múltiplos estados, já representaram centenas de trabalhadores em todo o Brasil.</p>
+          <p>Cada caso é tratado com atenção individual. Nossa prioridade é que você entenda cada etapa do processo — sem juridiquês, sem enrolação, com clareza e resultado.</p>
+          <a href="https://wa.me/5587981785458" class="btn" target="_blank">Quero falar com um especialista</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2>Perguntas que <span class="gold">mais recebemos</span></h2>
+      </div>
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>As audiências podem ser feitas por videochamada?</span>
+            <span class="faq-toggle">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sim. O CNJ aprovou o Juízo 100% digital, permitindo que todos os atos processuais sejam realizados sem comparecimento presencial.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Moro em outra cidade — isso afeta o atendimento?</span>
+            <span class="faq-toggle">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Não. A Dra. Paula e o Dr. Breno atendem 100% online em todo o Brasil.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Vocês fazem cálculo de rescisão?</span>
+            <span class="faq-toggle">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Realizamos os cálculos quando o objetivo é mover uma ação trabalhista.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Meus dados ficam seguros?</span>
+            <span class="faq-toggle">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sim. Utilizamos tecnologias com criptografia e seguimos integralmente a LGPD.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DEPOIMENTOS ===== -->
+  <section class="bg-secondary" id="avaliacoes">
+    <div class="container">
+      <div class="section-header">
+        <h2>O que dizem <span class="gold">nossos clientes</span></h2>
+        <p>Avaliações verificadas do Google</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Vc me ajudou bastante. Seu atendimento é nota 10000. Muito obrigada mesmo pela atenção"</p>
+          <div class="testimonial-author">Ana Paula Santos</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Deus colocou minha causa em mãos abençoadas. Causa muito bem conduzida, com empatia e atualização constante."</p>
+          <div class="testimonial-author">Alieta Gonçalves</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Ótima pessoa, responde rápido, esclareceu todas minhas dúvidas, excelente profissional."</p>
+          <div class="testimonial-author">Yuri Junqueira</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section class="bg-secondary">
+    <div class="container">
+      <div class="cta-final">
+        <h2>Seu problema trabalhista <span class="gold">tem solução.</span></h2>
+        <p>Fale agora com a Dra. Paula ou o Dr. Breno. Atendimento 100% online, sem sair de casa.</p>
+        <a href="https://wa.me/5587981785458" class="btn" target="_blank">Analisar meu caso agora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Dra Paula & Dr Breno Amorim</h3>
+          <p>Direito do Trabalho · Atendimento Online</p>
+        </div>
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <a href="https://wa.me/5587981785458" target="_blank">WhatsApp: (87) 98178-5458</a>
+          <a href="mailto:contato@advocacia.com">E-mail: contato@advocacia.com</a>
+        </div>
+        <div class="footer-section">
+          <h3>Credenciais</h3>
+          <p>Dr. Breno S. Amorim<br>OAB/PE: 6.578</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Dra Paula Márcula e Dr Breno Amorim — Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLUTUANTE ===== -->
+  <a href="https://wa.me/5587981785458" class="whatsapp-floating" title="Falar no WhatsApp" target="_blank">
+    <svg viewBox="0 0 24 24" style="width: 32px; height: 32px; fill: white;">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.869 1.171c-1.519.761-2.823 1.778-3.976 3.246C1.86 10.487.59 12.774.129 15.394c-.461 2.62.32 5.338 2.247 7.465.896 1.005 1.93 1.884 3.057 2.6.75.467 1.537.9 2.35 1.195 1.632.617 3.42.617 5.052 0 .812-.295 1.6-.728 2.35-1.195 1.127-.716 2.161-1.595 3.057-2.6 1.926-2.127 2.708-4.845 2.247-7.465-.46-2.62-1.73-4.907-3.488-6.589-1.153-1.468-2.457-2.485-3.976-3.246a9.87 9.87 0 00-4.869-1.171Z"/>
+    </svg>
+  </a>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script>
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const item = this.parentElement;
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
+</body>
+</html>
