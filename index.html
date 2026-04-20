@@ -1027,6 +1027,75 @@
       padding: 1rem 0;
     }
 
+    /* ===== HAMBURGER MENU ===== */
+    .hamburger-btn {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      border: none;
+      background: none;
+      padding: 0.5rem;
+      z-index: 1100;
+    }
+
+    .hamburger-btn span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--text-primary);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .hamburger-btn.open span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger-btn.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger-btn.open span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(10, 10, 10, 0.98);
+      z-index: 1050;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .mobile-nav.open {
+      display: flex;
+    }
+
+    .mobile-nav a {
+      color: var(--text-primary);
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-family: 'Playfair Display', serif;
+      transition: color 0.2s;
+    }
+
+    .mobile-nav a:hover {
+      color: var(--accent-gold);
+    }
+
+    .mobile-nav .btn {
+      animation: none;
+      font-size: 1rem;
+    }
+
     /* ===== WHATSAPP FLUTUANTE ===== */
     .whatsapp-floating {
       position: fixed;
@@ -1047,6 +1116,14 @@
 
     .whatsapp-floating:hover {
       transform: scale(1.1);
+    }
+
+    /* ===== LOCALIZAÇÃO GRID ===== */
+    .localizacao-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 3rem;
+      align-items: start;
     }
 
     /* ===== RESPONSIVIDADE ===== */
@@ -1125,50 +1202,82 @@
     }
 
     @media (max-width: 768px) {
+      /* Performance: bug crítico iOS — background-attachment: fixed causa repaint constante */
+      body {
+        background-attachment: scroll;
+      }
+
+      .container {
+        padding: 0 1.25rem;
+      }
+
+      section {
+        padding: 3.5rem 0;
+      }
+
       .nav {
         display: none;
       }
 
+      .hamburger-btn {
+        display: flex;
+      }
+
+      /* Hero: altura fixa causa problemas com a barra do browser no iOS */
+      .hero-3d {
+        height: auto;
+        min-height: 100svh;
+        padding: 2rem 0;
+      }
+
+      /* height: 100% colapsa quando o pai é height:auto — usa auto no mobile */
       .hero-wrapper {
         grid-template-columns: 1fr;
+        gap: 2.5rem;
+        height: auto;
+      }
+
+      .hero-left {
+        height: auto;
+      }
+
+      .hero-right {
+        display: flex;
+        height: auto;
+        overflow: hidden;
+      }
+
+      /*
+        zoom: 0.55 escala min-height:620px → 341px de layout natural.
+        Não sobrescrever min-height aqui — zoom já trata isso.
+      */
+      .devices-showcase {
+        zoom: 0.55;
       }
 
       .hero-left h1 {
+        font-size: 2.2rem;
+      }
+
+      .section-header h2 {
         font-size: 2rem;
       }
 
-      .devices-showcase {
-        gap: 1rem;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-
-      .device.desktop {
-        width: 320px;
-        height: 200px;
-      }
-
-      .device.laptop {
-        width: 250px;
-        height: 156px;
-      }
-
-      .device.tablet {
-        width: 180px;
-        height: 245px;
-      }
-
-      .device.smartphone {
-        width: 95px;
-        height: 190px;
+      /* Remove backdrop-filter no mobile: muito pesado, causa jank */
+      .service-card,
+      .testimonial-card {
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
       }
 
       .services-grid {
         grid-template-columns: 1fr;
+        gap: 1.25rem;
       }
 
       .diferenciais-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
       }
 
       .testimonials-grid {
@@ -1177,46 +1286,86 @@
 
       .footer-content {
         grid-template-columns: 1fr;
+        gap: 2rem;
       }
-    }
 
-    @media (max-width: 480px) {
-      .hero-wrapper {
+      .localizacao-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
       }
 
+      .sobre-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .sobre-images {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+
+      /* Botão flutuante menor no mobile */
+      .whatsapp-floating {
+        width: 54px;
+        height: 54px;
+        bottom: 1.25rem;
+        right: 1.25rem;
+      }
+
+      .whatsapp-floating svg {
+        width: 26px;
+        height: 26px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 1rem;
+      }
+
+      section {
+        padding: 2.5rem 0;
+      }
+
       .hero-left h1 {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
       }
 
       .hero-3d-subtitle {
         font-size: 0.95rem;
+        margin-bottom: 2rem;
       }
 
+      .section-header h2 {
+        font-size: 1.6rem;
+      }
+
+      .btn {
+        padding: 0.85rem 1.75rem;
+        font-size: 0.9rem;
+      }
+
+      /* Reduz ainda mais em telas muito pequenas — zoom escala min-height:620px → 260px */
       .devices-showcase {
-        gap: 0.8rem;
-        flex-wrap: wrap;
-        justify-content: center;
+        zoom: 0.42;
       }
 
-      .device.desktop {
-        width: 260px;
-        height: 160px;
+      .sobre-images {
+        grid-template-columns: 1fr;
+        max-width: 280px;
+        margin: 0 auto;
       }
 
-      .device.laptop {
-        width: 200px;
-        height: 125px;
-      }
-
-      .device.tablet {
+      .sobre-images .foto-container:last-child {
         display: none;
       }
+    }
 
-      .device.smartphone {
-        width: 85px;
-        height: 170px;
+    /* Respeita preferência do usuário por menos animações */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
       }
     }
   </style>
@@ -1234,9 +1383,23 @@
           <a href="#localizacao">Localização</a>
           <a href="https://wa.me/5587981785458" class="btn" target="_blank">Consultar Agora</a>
         </nav>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
   </header>
+
+  <!-- ===== MENU MOBILE ===== -->
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#servicos" class="mobile-nav-link">Serviços</a>
+    <a href="#sobre" class="mobile-nav-link">Sobre</a>
+    <a href="#avaliacoes" class="mobile-nav-link">Avaliações</a>
+    <a href="#localizacao" class="mobile-nav-link">Localização</a>
+    <a href="https://wa.me/5587981785458" class="btn" target="_blank">Consultar Agora</a>
+  </nav>
 
   <!-- ===== HERO 3D ===== -->
   <section class="hero-3d">
@@ -1494,11 +1657,11 @@
       <div class="sobre-content">
         <div class="sobre-images">
           <div class="foto-container">
-            <img src="dra-paula.jpg" alt="Dra. Paula Márcula" class="foto-real">
+            <img src="dra-paula.jpg" alt="Dra. Paula Márcula" class="foto-real" loading="lazy">
             <h3>Dra. Paula Márcula</h3>
           </div>
           <div class="foto-container">
-            <img src="dr-breno.png" alt="Dr. Breno Amorim" class="foto-real">
+            <img src="dr-breno.png" alt="Dr. Breno Amorim" class="foto-real" loading="lazy">
             <h3>Dr. Breno Amorim</h3>
           </div>
         </div>
@@ -1605,7 +1768,7 @@
         <h2>Nosso <span class="gold">Escritório</span></h2>
         <p>Atendimento presencial ou 100% online — você escolhe</p>
       </div>
-      <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 3rem; align-items: start;">
+      <div class="localizacao-grid">
         <!-- Infos -->
         <div style="display: flex; flex-direction: column; gap: 1.5rem;">
           <div style="background: rgba(201,146,42,0.06); border: 1px solid rgba(201,146,42,0.2); border-radius: 12px; padding: 1.5rem;">
@@ -1699,6 +1862,24 @@
 
   <!-- ===== SCRIPTS ===== -->
   <script>
+    // Hamburger Menu
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileNav = document.getElementById('mobileNav');
+
+    hamburgerBtn.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      hamburgerBtn.classList.toggle('open', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+        hamburgerBtn.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+
     // FAQ Accordion
     document.querySelectorAll('.faq-question').forEach(btn => {
       btn.addEventListener('click', function() {
