@@ -1,6 +1,6 @@
 # Dra. Paula & Dr. Breno Amorim - Advocacia Trabalhista
 
-Landing page desenvolvida para o escritório de advocacia trabalhista da Dra. Paula Márcula e Dr. Breno Amorim, com foco em atendimento 100% online em todo o Brasil e presencial em Petrolina - PE.
+Landing page desenvolvida para o escritório de advocacia trabalhista da Dra. Paula Marcula e Dr. Breno Amorim, com foco em atendimento 100% online em todo o Brasil e presencial em Petrolina - PE.
 
 ## 🚀 Tecnologias Utilizadas
 - HTML5
@@ -19,8 +19,8 @@ Landing page desenvolvida para o escritório de advocacia trabalhista da Dra. Pa
 ## 📍 Contato
 - WhatsApp: (87) 98178-5458
 - E-mail (Dra. Paula): paulamarcula.adv@gmail.com
-- E-mail (Dr. Breno): amorim.adv@gmail.com
-- Endereço: R. Cel. Amorim, 227 - Sala 11, Centro, Petrolina/PE
+- E-mail (Dr. Breno): contato@brenosamorimadvocacia.com.br
+- Endereço: Rua Coronel Amorim, Galeria Romana, nº 225, 1º Andar, Sala nº 11, Centro, Petrolina – PE. CEP 56302-320
 
 ## 💻 Como rodar o projeto
 Como é um projeto estático (HTML/CSS/JS), basta abrir o arquivo `index.html` no seu navegador preferido ou usar a extensão "Live Server" no VS Code para desenvolvimento em tempo real.
