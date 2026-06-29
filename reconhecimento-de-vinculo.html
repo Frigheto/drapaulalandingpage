@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Trabalhou sem carteira assinada e não recebeu suas verbas? Fale com um advogado especialista. Atendimento online em todo o Brasil.">
+  <meta name="keywords" content="reconhecimento de vínculo, trabalho sem carteira, advogado trabalhista">
+  <title>Trabalhou Sem Carteira Assinada? | Advocacia Trabalhista</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KSPB6GD2');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    /* ===== RESET & VARIÁVEIS ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary-dark: #0A0A0A;
+      --secondary-dark: #111111;
+      --tertiary-dark: #1A1A1A;
+      --accent-gold: #C9922A;
+      --accent-gold-hover: #D4A843;
+      --text-primary: #FFFFFF;
+      --text-secondary: #A0A0A0;
+      --border-light: rgba(255, 255, 255, 0.06);
+      --glass-bg: rgba(26, 26, 26, 0.7);
+      --glass-border: rgba(255, 255, 255, 0.1);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      color: var(--text-primary);
+      background: linear-gradient(135deg, #0A0A0A 0%, #1A0F00 25%, #0A0A0A 50%, #0F0F0F 75%, #0A0A0A 100%);
+      background-attachment: fixed;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 3rem;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: var(--primary-dark);
+      border-bottom: 1px solid var(--border-light);
+      padding: 1.5rem 0;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .logo:hover {
+      color: var(--accent-gold);
+    }
+
+    .nav {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .nav a {
+      color: var(--text-primary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav a:hover {
+      color: var(--accent-gold);
+    }
+
+    /* ===== BREADCRUMB ===== */
+    .breadcrumb {
+      padding: 1rem 0;
+      background-color: var(--secondary-dark);
+      border-bottom: 1px solid var(--border-light);
+      font-size: 0.9rem;
+    }
+
+    .breadcrumb a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--accent-gold);
+    }
+
+    .breadcrumb span {
+      color: var(--text-secondary);
+      margin: 0 0.5rem;
+    }
+
+    .breadcrumb .current {
+      color: var(--accent-gold);
+    }
+
+    /* ===== BOTÃO ===== */
+    .btn {
+      display: inline-block;
+      padding: 0.95rem 2.2rem;
+      background-color: var(--accent-gold);
+      color: var(--primary-dark);
+      text-decoration: none;
+      border: none;
+      border-radius: 50px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      box-shadow: 0 5px 25px rgba(201, 146, 42, 0.35);
+      letter-spacing: 0.2px;
+    }
+
+    .btn:hover {
+      background-color: var(--accent-gold-hover);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 40px rgba(201, 146, 42, 0.5), 0 0 30px rgba(201, 146, 42, 0.2);
+    }
+
+    .btn:active {
+      transform: translateY(-1px);
+    }
+
+    /* ===== SEÇÃO PADRÃO ===== */
+    section {
+      padding: 6rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    section.bg-secondary {
+      background-color: var(--secondary-dark);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-header h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+    }
+
+    .section-header p {
+      color: var(--text-secondary);
+      margin-bottom: 0.5rem;
+    }
+
+    .gold {
+      color: var(--accent-gold);
+      text-shadow: 0 0 25px rgba(201, 146, 42, 0.6), 0 0 50px rgba(201, 146, 42, 0.3);
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: #0A0A0A;
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6rem 2rem;
+      position: relative;
+      text-align: center;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(201, 146, 42, 0.08) 0%, transparent 70%);
+      border-radius: 50%;
+      filter: blur(60px);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 10;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      padding: 0.6rem 1.3rem;
+      border: 1px solid rgba(201, 146, 42, 0.5);
+      background: rgba(201, 146, 42, 0.05);
+      color: var(--accent-gold);
+      border-radius: 4px;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      font-weight: 500;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.25rem;
+      font-weight: 300;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+      max-width: 750px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ===== CARDS DE SITUAÇÕES ===== */
+    .situacoes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .situacao-card {
+      background: var(--glass-bg);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-radius: 16px;
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .situacao-card:hover {
+      border-color: rgba(201, 146, 42, 0.5);
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(201, 146, 42, 0.4), 0 0 30px rgba(201, 146, 42, 0.2);
+    }
+
+    .situacao-card::before {
+      content: '✓';
+      display: block;
+      font-size: 2rem;
+      color: var(--accent-gold);
+      margin-bottom: 1rem;
+    }
+
+    .situacao-card p {
+      color: var(--text-primary);
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    /* ===== CONTEXTO ===== */
+    .contexto {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .contexto p {
+      font-size: 1.15rem;
+      line-height: 1.9;
+      color: var(--text-secondary);
+    }
+
+    /* ===== CTA FINAL ===== */
+    .cta-final {
+      text-align: center;
+    }
+
+    .cta-final h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta-final p {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background-color: #050505;
+      border-top: 1px solid var(--border-light);
+      padding: 3rem 0 1rem;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .footer-section h3 {
+      color: var(--accent-gold);
+      margin-bottom: 1rem;
+      font-family: 'Playfair Display', serif;
+      font-weight: 500;
+      font-size: 1.1rem;
+      text-shadow: 0 0 10px rgba(201, 146, 42, 0.3);
+    }
+
+    .footer-section p,
+    .footer-section a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      margin-bottom: 0.5rem;
+      display: block;
+      transition: color 0.2s;
+    }
+
+    .footer-section a:hover {
+      color: var(--accent-gold);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      color: #555555;
+      font-size: 0.75rem;
+      padding: 1rem 0;
+    }
+
+    /* ===== HAMBURGER MENU ===== */
+    .hamburger-btn {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      border: none;
+      background: none;
+      padding: 0.5rem;
+      z-index: 1100;
+    }
+
+    .hamburger-btn span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--text-primary);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .hamburger-btn.open span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger-btn.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger-btn.open span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(10, 10, 10, 0.98);
+      z-index: 1050;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .mobile-nav.open {
+      display: flex;
+    }
+
+    .mobile-nav a {
+      color: var(--text-primary);
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-family: 'Playfair Display', serif;
+      transition: color 0.2s;
+    }
+
+    .mobile-nav a:hover {
+      color: var(--accent-gold);
+    }
+
+    .mobile-nav .btn {
+      font-size: 1rem;
+    }
+
+    /* ===== WHATSAPP FLUTUANTE ===== */
+    .whatsapp-floating {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 64px;
+      height: 64px;
+      background-color: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      z-index: 999;
+      transition: all 0.3s;
+    }
+
+    .whatsapp-floating:hover {
+      transform: scale(1.1);
+    }
+
+    /* ===== RESPONSIVIDADE ===== */
+    @media (max-width: 1024px) {
+      .situacoes-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        background-attachment: scroll;
+      }
+
+      .container {
+        padding: 0 1.25rem;
+      }
+
+      section {
+        padding: 3.5rem 0;
+      }
+
+      .nav {
+        display: none;
+      }
+
+      .hamburger-btn {
+        display: flex;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 4rem 1.5rem;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.05rem;
+      }
+
+      .section-header h2 {
+        font-size: 2rem;
+      }
+
+      .situacoes-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .whatsapp-floating {
+        width: 54px;
+        height: 54px;
+        bottom: 1.25rem;
+        right: 1.25rem;
+      }
+
+      .whatsapp-floating svg {
+        width: 26px;
+        height: 26px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 1rem;
+      }
+
+      section {
+        padding: 2.5rem 0;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1rem;
+      }
+
+      .section-header h2 {
+        font-size: 1.6rem;
+      }
+
+      .btn {
+        padding: 0.85rem 1.75rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KSPB6GD2"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="/" class="logo">Advocacia Trabalhista</a>
+        <nav class="nav">
+          <a href="/#servicos">Serviços</a>
+          <a href="/#sobre">Sobre</a>
+          <a href="/#avaliacoes">Avaliações</a>
+          <a href="/#localizacao">Localização</a>
+          <a href="https://wa.me/5587981785458" class="btn" target="_blank"
+            onclick="gtag('event','conversion',{'send_to':'AW-18224122910/GWIYCPTktrscEJ6Y-PFD'});">Consultar Agora</a>
+        </nav>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== MENU MOBILE ===== -->
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="/#servicos" class="mobile-nav-link">Serviços</a>
+    <a href="/#sobre" class="mobile-nav-link">Sobre</a>
+    <a href="/#avaliacoes" class="mobile-nav-link">Avaliações</a>
+    <a href="/#localizacao" class="mobile-nav-link">Localização</a>
+    <a href="https://wa.me/5587981785458" class="btn" target="_blank"
+      onclick="gtag('event','conversion',{'send_to':'AW-18224122910/GWIYCPTktrscEJ6Y-PFD'});">Consultar Agora</a>
+  </nav>
+
+  <!-- ===== BREADCRUMB ===== -->
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="/">Home</a>
+      <span>›</span>
+      <span class="current">Reconhecimento de Vínculo</span>
+    </div>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Reconhecimento de Vínculo Empregatício</div>
+      <h1>Trabalhou sem carteira assinada? Você pode ter direito a receber <span class="gold">tudo que não foi pago.</span></h1>
+      <p class="hero-subtitle">Quem trabalhou sem registro por mais de 6 meses pode ter direito ao reconhecimento do vínculo e ao pagamento de todas as verbas devidas.</p>
+      <a href="https://wa.me/5587981785458" class="btn" target="_blank"
+        onclick="gtag('event','conversion',{'send_to':'AW-18224122910/GWIYCPTktrscEJ6Y-PFD'});">Analisar meu caso agora</a>
+    </div>
+  </section>
+
+  <!-- ===== SITUAÇÕES ===== -->
+  <section class="bg-secondary">
+    <div class="container">
+      <div class="section-header">
+        <h2>Você se identifica com <span class="gold">alguma dessas situações?</span></h2>
+      </div>
+      <div class="situacoes-grid">
+        <div class="situacao-card">
+          <p>Trabalhei sem carteira assinada por 6 meses ou mais</p>
+        </div>
+        <div class="situacao-card">
+          <p>Não recebi férias, 13º salário ou FGTS</p>
+        </div>
+        <div class="situacao-card">
+          <p>Fui demitido e não recebi nada</p>
+        </div>
+        <div class="situacao-card">
+          <p>Meu tempo de trabalho não está anotado para a aposentadoria</p>
+        </div>
+        <div class="situacao-card">
+          <p>A empresa pagava menos do que o salário mínimo</p>
+        </div>
+        <div class="situacao-card">
+          <p>Trabalhei assim por anos e nunca fui registrado</p>
+        </div>
+      </div>
+      <div style="text-align: center;">
+        <a href="https://wa.me/5587981785458" class="btn" target="_blank"
+          onclick="gtag('event','conversion',{'send_to':'AW-18224122910/GWIYCPTktrscEJ6Y-PFD'});">Falar com advogado agora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTEXTO ===== -->
+  <section>
+    <div class="container">
+      <div class="contexto">
+        <p>Quem trabalha sem carteira assinada muitas vezes não sabe que pode entrar na Justiça para ter esse vínculo reconhecido e exigir o pagamento de tudo que não foi pago: verbas rescisórias, FGTS, férias e 13º. Além disso, esse período sem registro pode prejudicar sua aposentadoria. Quanto antes você regularizar, melhor.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section class="bg-secondary">
+    <div class="container">
+      <div class="cta-final">
+        <h2>Seu caso pode ter <span class="gold">solução.</span></h2>
+        <p>Fale com a Dra. Paula Marcula ou o Dr. Breno Amorim e descubra se você tem direito.</p>
+        <a href="https://wa.me/5587981785458" class="btn" target="_blank"
+          onclick="gtag('event','conversion',{'send_to':'AW-18224122910/GWIYCPTktrscEJ6Y-PFD'});">Falar com advogado agora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Dra. Paula Marcula & Dr. Breno Amorim</h3>
+          <p>Direito do Trabalho · Atendimento Online</p>
+          <p style="margin-top:0.75rem; font-size:0.85rem;">
+            Rua do Cajueiro, nº 160, sala 6, Edf. Guimarães<br>Centro, Petrolina, PE · CEP: 56304-420
+          </p>
+          <a href="https://www.google.com/maps/search/Rua+do+Cajueiro,+160,+sala+6,+Edf.+Guimarães,+Centro,+Petrolina,+PE"
+            target="_blank" style="margin-top:0.5rem; font-size:0.8rem; color:var(--accent-gold);">Ver no Google Maps
+            →</a>
+        </div>
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <a href="https://wa.me/5587981785458" target="_blank">WhatsApp: (87) 98178-5458</a>
+          <a href="mailto:paulamarcula.adv@gmail.com">Dra. Paula: paulamarcula.adv@gmail.com</a>
+          <a href="mailto:contato@brenosamorimadvocacia.com.br">Dr. Breno: contato@brenosamorimadvocacia.com.br</a>
+        </div>
+        <div class="footer-section">
+          <h3>Credenciais</h3>
+          <p>Dr. Breno S. Amorim<br>OAB/PE 45.776 | OAB/BA 85.258</p>
+          <p style="margin-top:0.75rem;">Dra. Paula E. R. Marcula<br>OAB/PE 57.813</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Dra. Paula Marcula e Dr. Breno Amorim. Todos os direitos reservados.</p>
+        <p style="margin-top:0.4rem; font-size:0.78rem; color:var(--text-secondary);">CNPJ: 60.837.337/0001-80</p>
+        <p style="margin-top:0.4rem; font-size:0.78rem;">
+          <a href="/politica-de-privacidade.html" style="color:var(--text-secondary); text-decoration:underline;">Política de Privacidade</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLUTUANTE ===== -->
+  <a href="https://wa.me/5587981785458" class="whatsapp-floating" title="Falar no WhatsApp" target="_blank"
+    onclick="gtag('event','conversion',{'send_to':'AW-18224122910/GWIYCPTktrscEJ6Y-PFD'});">
+    <svg viewBox="0 0 24 24" style="width: 32px; height: 32px; fill: white;">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.869 1.171c-1.519.761-2.823 1.778-3.976 3.246C1.86 10.487.59 12.774.129 15.394c-.461 2.62.32 5.338 2.247 7.465.896 1.005 1.93 1.884 3.057 2.6.75.467 1.537.9 2.35 1.195 1.632.617 3.42.617 5.052 0 .812-.295 1.6-.728 2.35-1.195 1.127-.716 2.161-1.595 3.057-2.6 1.926-2.127 2.708-4.845 2.247-7.465-.46-2.62-1.73-4.907-3.488-6.589-1.153-1.468-2.457-2.485-3.976-3.246a9.87 9.87 0 00-4.869-1.171Z" />
+    </svg>
+  </a>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script>
+    // Hamburger Menu
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileNav = document.getElementById('mobileNav');
+
+    hamburgerBtn.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      hamburgerBtn.classList.toggle('open', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+        hamburgerBtn.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+  </script>
+</body>
+
+</html>
